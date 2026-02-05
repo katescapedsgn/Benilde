@@ -31,7 +31,7 @@ def main():
 
     for dirname, dirnames, filenames in os.walk('.'):
         if 'index.html' in filenames:
-            print("index.html already exists, generating...")
+            print("index.html already exists, generating")
             with open(os.path.join(dirname, 'index.html'), 'w', encoding="utf-8") as f:
                 f.write("\n".join([
                     get_template_head(dirname),
