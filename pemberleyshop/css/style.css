@@ -1,0 +1,189 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	font-family: 'Open Sans', helvetica, sans-serif;
+	box-sizing: border-box;
+	margin: 0;
+	color: #222;
+}
+
+.container {
+	width: 90%;
+	margin: 0 5%;
+}
+
+header {
+	width: 100%;
+	height: 40vh;
+	background: url('../images/books-header.jpg') no-repeat center;
+	background-size: cover;
+	background-attachment: relative;
+	text-align: center;
+	color: #fff;
+}
+
+.title {
+	font-family: 'Playfair Display', times, serif;
+	font-style: italic;
+	font-size: 50px;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	line-height: 40vh;
+	margin: auto;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+header:before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 40vh;
+	background: rgba(0,0,0,0.5);
+	left: 0;
+}
+
+header .container {
+	position: relative;
+}
+
+/*--- typography ---*/
+h1 {
+	font-family: 'Playfair Display', times, serif;
+	font-style: italic;
+	text-transform: uppercase;
+	font-size: 30px;
+	padding: 2% 0;
+	letter-spacing: 1px;
+}
+
+h2 {
+	font-size: 14px;
+	text-transform: uppercase;
+}
+
+h3 {
+	font-style: italic;
+	font-size: 14px;
+	font-weight: 400;
+	text-transform: lowercase;
+}
+
+a {
+	color: #222;
+	text-decoration: none;
+	
+}
+
+a.active, a:hover {
+	color:#222;
+	transition:all .4s ease-in-out;
+	cursor:pointer;
+}
+
+.shop a {
+	border-bottom: 2px solid #decba4;
+	box-shadow: 0 -5px #decba4 inset;
+}
+
+.shop a:hover {
+	box-shadow: 0 -20px #decba4 inset;
+}
+
+/*--- PAGES ---*/
+#index .col-4, #login .col-4 {
+	margin: 8% 33.33%;
+}
+
+/*--- media ---*/
+.media {
+	margin: 30px;
+	width: 200px;
+	height: auto;
+	float: left;
+	background: #fafafa;
+}
+
+.media img {
+	width: 200px;
+	height: 300px;
+}
+
+.mediatxt {
+	padding: 10px;
+}
+
+/*--- form ---*/
+.col-4 p {
+	text-align: center;
+}
+
+.center {
+	text-align: center;
+}
+
+input[type=submit] {
+	padding: 12px;
+	font-family: 'Open Sans', helvetica, sans-serif;
+	font-size: 15px;
+	background: #decba4;
+	border-radius: 5px;
+	margin: 5% 0;
+	border: none;
+	cursor: pointer;
+}
+
+input[type=text], input[type=password] {
+	padding: 8px;
+	font-family: 'Open Sans', helvetica, sans-serif;
+	border: 1px solid #decba4;
+	border-radius: 20px;
+	width: 100%;
+}
+
+input[type=radio] {
+	position: absolute;
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+
+.input-hidden {
+	position: absolute;
+	left: -9999px;
+}
+
+input[type=radio]:checked + label>div {
+	opacity: 1;
+	border: 1px solid #fff;
+}
+
+input[type=radio] + label>div {
+	opacity: .8;
+}
+
+button {
+	padding: 12px;
+	font-family: 'Open Sans', helvetica, sans-serif;
+	font-size: 15px;
+	background: #bad0f1;
+	border-radius: 5px;
+	margin: 5% 0;
+	border: none;
+	cursor: pointer;
+	margin-right: 5%;
+}
+
+button a {
+	text-decoration: none;
+	color: #222;
+}
+
+/*--- footer ---*/
+footer {
+	background: #222;
+	padding: 1% 0;
+	color: #fff;
+	text-align: center;
+}

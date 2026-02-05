@@ -1,0 +1,44 @@
+video {
+	width: 320px;
+	height: 240px;
+	visibility: hidden;
+}
+
+button {
+	background: #008CBA;
+	color: #fff;
+	border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    margin: 4px 2px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+}
+
+button:disabled {
+    opacity: .5;
+    cursor: not-allowed;
+}
+
+#btn-upload {
+    color: transparent;
+}
+
+#btn-upload::-webkit-file-upload-button {
+    visibility: hidden;
+}
+
+#btn-upload::before {
+    content: 'Choose files';
+    display: inline-block;
+    background: #008CBA;
+    color: #fff;
+    border-radius: 3px;
+    padding: 10px 20px;
+    outline: none;
+    white-space: nowrap;
+    -webkit-user-select: none;
+    cursor: pointer;
+}

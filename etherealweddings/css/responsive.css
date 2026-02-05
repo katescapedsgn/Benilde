@@ -1,0 +1,125 @@
+@charset "utf-8";
+/*--- DO NOT TOUCH ---*/
+img {
+	max-width:100%;
+}
+
+.slicknav_menu {
+	display:none;
+}
+
+[class*='col-'] {
+	padding:0 1.5%;
+	box-sizing:border-box;
+}
+/*--- DO NOT TOUCH ---*/
+
+/*--- small desktop screens ---*/
+@media all and (max-width: 1199px) {
+	
+}
+
+/*--- tablet landscapes ---*/
+@media all and (max-width: 1024px) {
+	.container {
+		width:90%;
+	}
+	
+	section {
+		width:100%;
+		padding:50px 0;
+		text-align:center;
+	}
+	
+	#featured {
+		height:auto;
+	}
+	
+	.htxt {
+		padding:100px 0;
+	}
+	
+	#title {
+		font-size:40px;
+		margin:20px 0;
+		letter-spacing:1px;
+	}
+	
+	#title img {
+		padding:0px;
+	}
+}
+
+/*--- tablet portrait ---*/
+@media all and (max-width: 768px) {
+	[class*='col-'] {
+		width:100%;
+	}
+
+	.js #menu {
+		display:none;
+	}
+
+	.slicknav_menu {
+		display:block;
+		top:0;
+		background-color:#052d49;
+	}
+	.slicknav_btn {
+		background:none;
+	}
+	
+	.slicknav_menu .slicknav_icon-bar {
+  		background-color:#81a9ff;
+	}
+	
+	.slicknav_nav .slicknav_item:hover {
+		background:none;
+		color:#81a9ff;
+	}
+
+	.slicknav_nav a:hover{
+		background:none;
+		color:#81a9ff;
+	}
+	
+	.slicknav_nav .slicknav_txtnode {
+    	padding: 7px 15px;
+		margin: 0;
+	}
+	
+	/*--- general ---*/
+	big { font-size:60px; }
+	
+	h1 { font-size:50px; }
+	
+	h2 { font-size:30px;}
+	
+	h3 { font-size:20px; }
+	
+	/*--- navigation ---*/
+	header {
+		position:relative;
+	}
+	
+	#aboutfeatured, #servicesfeatured {
+		margin:auto;
+	}
+
+	#a img, #b img, #c img {
+		width:100%;
+		height:100%;
+		float:left;
+	}
+	
+	.team-img {
+		width:50%;
+	}
+}
+
+/*--- small mobile devices ---*/
+@media all and (max-width: 575px) {
+	.team-img {
+		width:100%;
+	}
+}

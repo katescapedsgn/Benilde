@@ -1,0 +1,191 @@
+@charset "utf-8";
+/*--- DO NOT TOUCH ---*/
+img {
+	max-width:100%;
+}
+
+.slicknav_menu {
+	display:none;
+}
+
+[class*='col-'] {
+	padding:0 1.5%;
+	box-sizing:border-box;
+}
+/*--- DO NOT TOUCH ---*/
+
+/*--- small laptop ---*/
+@media all and (max-width: 1280px) {
+	.htxt {
+		padding:15vh 0 0;
+		color:#fff;
+	}
+	
+	big { font-size:70px; }
+	
+	h1 { font-size:45px; }
+
+	h2 { font-size:35px; }
+	
+	.quote { font-size:60px; }
+}
+
+/*--- small desktop screens ---*/
+@media all and (max-width: 1199px) {
+	
+}
+
+/*--- tablet landscapes & iPad Pro ---*/
+@media all and (max-width: 1024px) {
+/*--- DO NOT TOUCH ---*/
+	[class*='col-'] {
+		width:100%;
+	}
+
+	.js #menu {
+		display:none;
+	}
+/*--- DO NOT TOUCH ---*/
+	
+	/*--- slicknav menu ---*/
+	.slicknav_menu {
+		display:block;
+		top:0;
+		background-color:#ffabd2;
+	}
+	.slicknav_btn {
+		background:none;
+	}
+	
+	.slicknav_menu .slicknav_icon-bar {
+		background-color:#da6d7c;
+	}
+	
+	.slicknav_nav .slicknav_item:hover {
+		background:none;
+		color:#fff;
+	}
+
+	.slicknav_nav a {
+		text-transform:uppercase;
+		font-weight:500;
+	}
+	
+	.slicknav_nav a.active, .slicknav_nav a:hover {
+		background:none;
+		color:#da6d7c;
+	}
+	
+	.slicknav_nav .slicknav_txtnode {
+    	padding: 7px 15px;
+		margin: 0;
+	}
+	
+	 .slicknav_nav ul, .slicknav_nav li {
+		margin-top:0;
+		margin-right:0;
+		margin-bottom:0;
+	}
+	
+	.mainmenu { display:none; }
+	
+	.sub, #submenu { display:block; }
+	
+	/*--- header navigation ---*/
+	header {
+		position:relative;
+	}
+	
+	#title a { color:#222; }
+	
+	.quote { font-size:50px; }
+	
+	/*--- form ---*/
+	input, select, textarea { width:90%; }
+}
+
+/*--- tablet portrait & iPad ---*/
+@media all and (max-width: 768px) {	
+	big { font-size:80px; }
+	
+	h1 { font-size:45px; }
+
+	h2 { font-size:35px; }
+	
+	.quote { font-size:40px; }
+	
+	
+	/*--- SUB PAGE: PROCEDURES TYPES ---*/
+	.menutitle h6 { font-size:20px; }
+	
+	.type { width:70%; }
+}
+
+/*--- small mobile devices ---*/
+@media all and (max-width: 575px) {
+	big { font-size:50px; }
+	
+	.htxt h2 { font-size:20px; }
+	
+	h2 { font-size:30px; }
+	
+	h3, h4, h5, h6 { letter-spacing:1px; }
+	
+	footer { font-size:14px; }
+	
+	
+	/*--- SUB PAGE: PROCEDURES TYPES ---*/
+	.type { width:100%; }
+	
+	.maintitle h2 { font-size:25px; }
+	
+	h5.treatments { font-size:20px; }
+	
+	.menutitle h6 { font-size:18px; }
+}
+
+/*--- iPhone 6/7/8 Plus ---*/
+@media all and (max-width: 414px) {
+	h3 { font-size:25px; }
+	
+	.quote { font-size:35px; }
+}
+
+/*--- iPhone 6/7/8 ---*/
+@media all and (max-width: 375px) {
+	body { font-size:14px; }
+}
+
+/*--- iPhone 5/SE ---*/
+@media all and (max-width: 320px) {
+	big { font-size:40px; }
+	
+	.htxt h2 { font-size:16px; }
+	
+	h1 { font-size:35px; }
+	
+	h2 { font-size:28px; }
+	
+	h3, h4, h5, h6 { font-size:20px; }
+}
+
+
+/*----- PORTFOLIO GALLERY GRID -----*/
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+	.column {
+		width:50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (min-width: 320px) and (max-width: 600px) {
+	.column {
+		width:100%;
+    }
+	
+	/* Add padding BETWEEN each column */
+	.row, .row > .column {
+		padding:15px 0;
+	}
+}

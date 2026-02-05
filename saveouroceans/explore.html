@@ -1,0 +1,357 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Marine Wildlife | Save Our Oceans</title>
+<link rel="shortcut icon" href='icons/seashell.png'>
+
+<!--- stylesheets --->
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/grid.css">
+<link rel="stylesheet" type="text/css" href="css/my-lightbox.css">
+
+<!--- fonts --->
+<link href='https://fonts.googleapis.com/css?family=Playfair+Display:700,700i' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:600,600italic,700,700italic' rel='stylesheet'>
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+<!--- icons --->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!--- tooltips script --->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="http://static.tumblr.com/rzl30kg/eAxm7a751/jquery.style-my-tooltips.js"></script>
+
+<script type="text/javascript">
+	(function($){
+		$(document).ready(function(){
+			$("[title]").style_my_tooltips({
+				tip_follows_cursor:true,
+				tip_delay_time:200,
+				tip_fade_speed:300
+           });
+		});
+	})(jQuery);
+
+//sticky    
+$(function(){
+	var stickyRibbonTop = $('#navi').offset().top;
+	$(window).scroll(function(){
+		if( $(window).scrollTop() > stickyRibbonTop ) {
+			$('#navi').css({position: 'fixed', top: '0px'});
+		} else {
+			$('#navi').css({position: 'relative', top: '0px'});
+		}
+	});
+});
+</script>
+
+<script>  
+<!----- JQUERY FOR SLIDING NAVIGATION --->   
+$(document).ready(function() {
+  $('a[href*=#]').each(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+    && location.hostname == this.hostname
+    && this.hash.replace(/#/,'') ) {
+      var $targetId = $(this.hash), $targetAnchor = $('[name=' + this.hash.slice(1) +']');
+      var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
+       if ($target) {
+         var targetOffset = $target.offset().top;
+
+<!----- JQUERY CLICK FUNCTION REMOVE AND ADD CLASS "ACTIVE" + SCROLL TO THE DIV --->
+         $(this).click(function() {
+            $("#nav li a").removeClass("active");
+            $(this).addClass('active');
+           $('html, body').animate({scrollTop: targetOffset}, 1000);
+           return false;
+         });
+      }
+    }
+  });
+
+});
+</script>
+
+</head>
+
+<body>
+<!--- navigation --->
+<div id="navi">
+	<div class="icon"><img src="icons/sea-snail.png" alt="" /></div>
+	<div class="title">
+		<a href="index.html">Save Our Oceans</a>
+	</div>
+	<nav id="nav">
+		<ul>
+			<li><a href="about.html">about</a></li>
+			<li><a href="explore.html" class="active">explore</a></li>
+			<li><a href="support.html">take action</a></li>
+			<li><a href="contact.html">contact</a></li>
+		</ul>
+    </nav>
+</div>
+
+<!--- explore header --->
+<div id="exploreheader">
+	<div class="container">
+	<div class="span12 center">
+		<div class="aht">explore</div>
+	</div>
+	</div>
+</div>
+
+<!--- explore --->
+<div id="explore">
+	<div class="container">
+	<div class="span12 center">
+		<h1>marine wildlife</h1>
+		<p style="text-align:center;"><b>Our oceans are home to some of the most magnificent and unusual creatures on Earth.</b></p>
+		
+	<!--- album --->
+	<div id="album">
+		<div class="box">
+			<h1>octopus</h1>
+			<img src="gallery/cephalopods.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow cursor" />
+		</div>
+		
+		<div class="box">
+			<h1>fishes</h1>
+			<img src="gallery/fishes.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow cursor" />
+		</div>
+		
+		<div class="box">
+			<h1>seal</h1>
+			<img src="gallery/marinemammals.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow cursor" />
+		</div>
+		
+		<div class="box">
+			<h1>shark</h1>
+			<img src="gallery/sharks.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow cursor" />
+		</div>
+		
+		<div class="box">
+			<h1>jellyfish</h1>
+			<img src="gallery/pink jellyfish.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow cursor" />
+		</div>
+		
+		<div class="box">
+			<h1>lionfish</h1>
+			<img src="gallery/lionfish.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow cursor" />
+		</div>
+		
+		<div class="box">
+			<h1>whale</h1>
+			<img src="gallery/humpback whale watching.jpg" onclick="openModal();currentSlide(7)" class="hover-shadow cursor" />
+		</div>
+		
+		<div class="box">
+			<h1>dolphin</h1>
+			<img src="gallery/dolphins talk.jpg" onclick="openModal();currentSlide(8)" class="hover-shadow cursor" />
+		</div>
+		
+		<div class="box">
+			<h1>seabird</h1>
+			<img src="gallery/seabirds.jpg" onclick="openModal();currentSlide(9)" class="hover-shadow cursor" />
+		</div>
+		
+		<div class="box">
+			<h1>coral</h1>
+			<img src="gallery/coral.jpg" onclick="openModal();currentSlide(10)" class="hover-shadow cursor" />
+		</div>
+		
+		<div class="box">
+			<h1>seaturtle</h1>
+			<img src="gallery/seaturtle.jpg" onclick="openModal();currentSlide(11)" class="hover-shadow cursor" />
+		</div>
+		
+		<div class="box">
+			<h1>stingray</h1>
+			<img src="gallery/Blue spotted sting ray photo by David Clode.jpg" onclick="openModal();currentSlide(12)" class="hover-shadow cursor" />
+		</div>
+		
+		<div class="box">
+			<h1>atlantic wolffish</h1>
+			<img src="gallery/atlantic wolffish.jpg" onclick="openModal();currentSlide(13)" class="hover-shadow cursor" />
+		</div>
+		
+		<div class="box">
+			<h1>manatee</h1>
+			<img src="gallery/Manatee.jpg" onclick="openModal();currentSlide(14)" class="hover-shadow cursor" />
+		</div>
+		
+		<div class="box">
+			<h1>marine iguana</h1>
+			<img src="gallery/marine iguana.jpg" onclick="openModal();currentSlide(15)" class="hover-shadow cursor" />
+		</div>
+		
+		<div class="box">
+			<h1>sperm whale</h1>
+			<img src="gallery/sperm whale.jpg" onclick="openModal();currentSlide(16)" class="hover-shadow cursor" />
+		</div>
+	</div>
+	
+	<!--- lightbox --->
+	<div id="myModal" class="modal">
+		<span class="close cursor" onclick="closeModal()"></span>
+		<div class="modal-content">
+			
+			<div class="mySlides">
+				<div class="numbertext">1 / 16</div>
+				<img src="gallery/cephalopods.jpg" style="width: 100%">
+				<div class="text">octopus</div>
+			</div>
+			
+			<div class="mySlides">
+				<div class="numbertext">2 / 16</div>
+				<img src="gallery/fishes.jpg" style="width: 100%">
+				<div class="text">fishes</div>
+			</div>
+			<div class="mySlides">
+				<div class="numbertext">3 / 16</div>
+				<img src="gallery/marinemammals.jpg" style="width: 100%">
+				<div class="text">seal</div>
+			</div>
+			
+			<div class="mySlides">
+				<div class="numbertext">4 / 16</div>
+				<img src="gallery/sharks.jpg" style="width: 100%">
+				<div class="text">shark</div>
+			</div>
+			
+			<div class="mySlides">
+				<div class="numbertext">5 / 16</div>
+				<img src="gallery/pink jellyfish.jpg" style="width: 100%">
+				<div class="text">jellyfish</div>
+			</div>
+			
+			<div class="mySlides">
+				<div class="numbertext">6 / 16</div>
+				<img src="gallery/lionfish.jpg" style="width: 100%">
+				<div class="text">lionfish</div>
+			</div>
+			
+			<div class="mySlides">
+				<div class="numbertext">7 / 16</div>
+				<img src="gallery/humpback whale watching.jpg" style="width: 100%">
+				<div class="text">whale</div>
+			</div>
+			
+			<div class="mySlides">
+				<div class="numbertext">8 / 16</div>
+				<img src="gallery/dolphins talk.jpg" style="width: 100%">
+				<div class="text">dolphin</div>
+			</div>
+			
+			<div class="mySlides">
+				<div class="numbertext">9 / 16</div>
+				<img src="gallery/seabirds.jpg" style="width: 100%">
+				<div class="text">seabird</div>
+			</div>
+			
+			<div class="mySlides">
+				<div class="numbertext">10 / 16</div>
+				<img src="gallery/coral.jpg" style="width: 100%">
+				<div class="text">coral</div>
+			</div>
+			
+			<div class="mySlides">
+				<div class="numbertext">11 / 16</div>
+				<img src="gallery/seaturtle.jpg" style="width: 100%">
+				<div class="text">seaturtle</div>
+			</div>
+			
+			<div class="mySlides">
+				<div class="numbertext">12 / 16</div>
+				<img src="gallery/Blue spotted sting ray photo by David Clode.jpg" style="width: 100%">
+				<div class="text">stingray</div>
+			</div>
+			
+			<div class="mySlides">
+				<div class="numbertext">13 / 16</div>
+				<img src="gallery/atlantic wolffish.jpg" style="width: 100%">
+				<div class="text">atlantic wolffish</div>
+			</div>
+			
+			<div class="mySlides">
+				<div class="numbertext">14 / 16</div>
+				<img src="gallery/Manatee.jpg" style="width: 100%">
+				<div class="text">manatee</div>
+			</div>
+			
+			<div class="mySlides">
+				<div class="numbertext">15 / 16</div>
+				<img src="gallery/marine iguana.jpg" style="width: 100%">
+				<div class="text">marine iguana</div>
+			</div>
+			
+			<div class="mySlides">
+				<div class="numbertext">16 / 16</div>
+				<img src="gallery/sperm whale.jpg" style="width: 100%">
+				<div class="text">sperm whale</div>
+			</div>
+			
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+		</div>
+	</div>
+	
+	</div>
+	</div>
+</div>
+
+<!--- footer --->
+<footer>
+	<div id="social">
+		<a href="http://facebook.com" title="facebook"><i class="fa fa-facebook-f" aria-hidden="true"></i></a>
+		<a href="http://twitter.com" title="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+		<a href="http://instagram.com" title="instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+		<a href="http://youtube.com" title="youtube"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+		<a href="http://google.com" title="google plus"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+		<a href="http://behance.net" title="behance"><i class="fa fa-behance" aria-hidden="true"></i></a>
+		<a href="http://pinterest.com" title="pinterest"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+	</div>
+	<br>&copy; 2018 Save Our Oceans. All rights reserved. For educational purposes only.
+</footer>
+
+<!--- lightbox script --->
+<script>
+function openModal() {
+  document.getElementById('myModal').style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById('myModal').style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+
+</body>
+</html>

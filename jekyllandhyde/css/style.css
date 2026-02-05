@@ -1,0 +1,601 @@
+@charset "utf-8";
+
+* {
+	margin:0;
+	padding:0;
+}
+
+body {
+	font-family:'Tangerine', cursive;
+	font-weight:400;
+	background:#000;
+	color:#fff;
+	width:100%;
+}
+
+/*--- navigation ---*/
+nav {
+	position:fixed;
+	right:10px;
+	height:100vh;
+	line-height:100vh;
+	z-index:999;
+}
+
+nav ul {
+	list-style:none;
+	display:inline-block;
+	vertical-align:middle;
+}
+
+nav li {
+	margin:10px 0;
+}
+
+nav a {
+	color:#fff;
+	background:#111;
+	display:block;
+	width:30px;
+	height:30px;
+	text-align:center;
+	line-height:30px;
+	text-decoration:none;
+	border-radius:50%;
+}
+
+.current a {
+	color:#111;
+	background:#fff;
+}
+
+/*--- general ---*/
+main {
+	overflow:hidden;
+}
+
+section {
+	width:1920px;
+	height:1080px;
+	position:relative;
+	max-height:100%;
+}
+
+.container {
+	width:100%;
+	margin:0 auto;
+}
+
+h1 {
+	font-size:100px;
+	margin:0 auto;
+	position:absolute;
+	padding-top:5vh;
+	left:60vw;
+	z-index:99;
+}
+
+h2 {
+	font-size:100px;
+	margin:0 auto;
+	position:absolute;
+	top:40vh;
+	left:50vw;
+	z-index:99;
+}
+
+.text {
+	width:100%;
+	margin:0 auto;
+	text-align:center;
+}
+
+p {
+	font-family:'Niconne', cursive;
+	font-weight:400;
+	font-size:30px;
+	line-height:1.5;
+	width:50%;
+	position:absolute;
+	z-index:99;
+}
+
+mark {
+	background-color:rgba(0,0,0,0);
+	color:coral;
+}
+
+.element {
+	position:absolute;
+	width:100%;
+}
+
+/*--- PARAGRAPHS ---*/
+#two p {
+	top:7vh;
+	right:5vw;
+}
+
+#three p {
+	padding-top:3vh;
+	left:25vw;
+}
+
+.will-info p {
+	top:25vh;
+	left:25vw;
+	font-size:40px;
+}
+
+#four p {
+	width:60%;
+	top:1vh;
+	left:20vw;
+}
+
+#five p {
+	width:30%;
+	top:5vh;
+	left:35vw;
+}
+
+#six p {
+	width:45%;
+	top:0;
+	margin:0 10px;
+	padding:2%;
+	background:rgba(0,0,0,.8);
+}
+
+#six p:nth-child(1) {
+	float:left;
+}
+
+#six p:nth-child(2) {
+	float:right;
+	display:inline-block;
+}
+
+#seven p {
+	width:60%;
+	top:5vh;
+	left:20vw;
+}
+
+#eight p {
+	width:45%;
+	margin:0 10px;
+	bottom:0;
+	padding:2%;
+	background:rgba(0,0,0,.8);
+}
+
+#eight p:nth-child(1) {
+	float:left;
+}
+
+#eight p:nth-child(2) {
+	float:right;
+	display:inline-block;
+}
+
+#nine p {
+	padding:2%;
+	background:rgba(0,0,0,.8);
+}
+
+#ten p {
+	padding:2%;
+	background:rgba(0,0,0,.8);
+	bottom:0;
+	right:0;
+}
+
+#eleven p {
+	width:70%;
+	top:1vh;
+	left:15vw;
+}
+
+#eleven p:nth-child(2) {
+	font-size:30px;
+	color:#000;
+	width:35%;
+	top:40vh;
+	left:37vw;
+}
+
+#twelve p {
+	width:70%;
+	top:1vh;
+	left:15vw;
+}
+
+#thirteen p {
+	width:70%;
+	top:2vh;
+	left:15vw;
+}
+
+#thirteen #lanyonquote {
+	width:25%;
+	top:30vh;
+	left:5vw;
+}
+
+#thirteen #hydequote {
+	width:25%;
+	top:23vh;
+	left:70vw;
+}
+
+#fourteen p {
+	top:20vh;
+	left:5vw;
+}
+
+#finale p {
+	top:25vh;
+	left:25vw;
+}
+
+/*--- BACKGROUND ---*/
+.bg {
+	z-index:-998;
+}
+
+#one {
+	background:#040404;
+	z-index:-999;
+}
+
+#two {
+	background:#0f0f11;
+	z-index:-999;
+}
+
+#three {
+	background:#151110;
+	z-index:-999;
+}
+
+#four {
+	z-index:-999;
+	background:#0a0a0a;
+}
+
+#five {
+	z-index:-999;
+	background:#100e0b;
+}
+
+#six {
+	z-index:-999;
+	background:url('../images/mainbgmirror.png') no-repeat center;
+	background-size:cover;
+}
+
+#seven {
+	z-index:-999;
+	background:url('../images/fireplacebg.png') no-repeat bottom;
+	background-attachment:absolute;
+}
+
+#seven:before {
+	z-index:-998;
+	content:'';
+	position:absolute;
+	width:1920px;
+	height:1080px;
+	background:rgba(0,0,0,.8);
+}
+
+#eight {
+	z-index:-999;
+	background:url('../images/08bg.png') no-repeat center, #23191a;
+	background-size:cover;
+}
+
+#nine {
+	z-index:-999;
+}
+
+#ten {
+	z-index:-999;
+}
+
+#eleven {
+	background:#151110;
+	z-index:-999;
+}
+
+#twelve, #thirteen {
+	z-index:-999;
+	background:url('../images/fireplacebg.png') no-repeat bottom;
+	background-attachment:absolute;
+}
+
+#fourteen {
+	z-index:-999;
+	background:url('../images/fireplacebg.png') no-repeat bottom;
+	background-attachment:absolute;
+}
+
+#fourteen:before {
+	z-index:-998;
+	content:'';
+	position:absolute;
+	width:1920px;
+	height:1080px;
+	background:rgba(0,0,0,.8);
+}
+
+#finale {
+	z-index:-999;
+}
+
+/*==== ELEMENTS ====*/
+/*-- PART ONE --*/
+#jekyll {
+	z-index:-5;
+	animation-delay:3s;
+}
+
+#hyde {
+	z-index:-6;
+	animation-delay:3s;
+}
+
+#beaker {
+	z-index:-7;
+	animation-delay:2s;
+}
+
+#fog {
+	z-index:-7;
+	animation-delay:3s;
+}
+
+#stars {
+	z-index:-8;
+	animation-duration:10s;
+	animation-iteration-count:infinite;
+}
+
+/*--- PART TWO ---*/
+#girl {
+	z-index:-9;
+	animation-duration:5s;
+	animation-iteration-count:infinite;
+}
+
+#walk {
+	z-index:-10;
+}
+
+#eye {
+	z-index:-11;
+	width:1920px;
+	height:1080px;
+	background:url('../images/02eye.png');
+	animation:hyde-eye 5s steps(2) infinite;
+}
+
+@keyframes hyde-eye {
+	from { background-position:0; }
+	to { background-position:3840px; }
+}
+
+/*--- PART THREE ---*/
+.jekyll-will {
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	width:100%;
+	height:100%;
+	background:rgba(21,17,16,.8);
+}
+
+#handwriting {
+	z-index:-12;
+	display:block;
+}
+
+#letter1 {
+	z-index:-13;
+}
+
+#envelope {
+	z-index:-14;
+}
+
+#quill {
+	z-index:-15;
+}
+
+#letters {
+	z-index:-16;
+}
+
+/*--- PART FOUR ---*/
+#utterson-small {
+	z-index:-17;
+}
+
+#bgfour {
+	animation-duration:20s;
+	animation-iteration-count:infinite;
+}
+
+/*--- PART FIVE ---*/
+#hyde-seek {
+	z-index:-18;
+	width:1920px;
+	height:1080px;
+	background:url('../images/05hyde-and-seek.png');
+	background-position:left;
+	animation:hyde-seek 40s ease 5s infinite;
+}
+
+@keyframes hyde-seek {
+	50% { background-position:right; }
+}
+
+/*--- PART SIX ---*/
+#hyde-speech-bubble {
+	z-index:-19;
+	top:20vh;
+	left:1vw;
+}
+
+#hyde-speech-bubble img {
+	width:300px;
+}
+
+#utterson-speech-bubble {
+	z-index:-20;
+	top:20vh;
+	left:80vw;
+}
+
+#hyde-turn {
+	z-index:-21;
+	width:1920px;
+	height:1080px;
+	background:url('../images/06hyde-turn.png');
+	animation:hyde-turn 18s steps(3) infinite;
+}
+
+@keyframes hyde-turn {
+	from { background-position:0; }
+	to { background-position:-5760px; }
+}
+
+#utterson-side {
+	z-index:-22;
+}
+
+/*--- PART SEVEN ---*/
+#sevenutterson {
+	z-index:-23;
+	bottom:-10px;
+	left:10vw;
+}
+
+#sevenjekyll {
+	z-index:-24;
+	bottom:-5px;
+	left:60vw;
+}
+
+/*--- PART EIGHT ---*/
+#carewcase {
+	z-index:-25;
+}
+
+#forgedletter {
+	z-index:-26;
+}
+
+/*--- PART NINE ---*/
+
+
+/*--- PART TEN ---*/
+#hydedeath {
+	z-index:-27;
+}
+
+/*--- PART ELEVEN ---*/
+
+
+/*--- PART TWELVE ---*/
+#twelvehyde {
+	z-index:-28;
+	bottom:-6px;
+	left:16vw;
+}
+
+#twelvelanyon {
+	z-index:-29;
+	bottom:-5px;
+	left:58vw;
+}
+
+/*--- PART THIRTEEN ---*/
+#thirteenhyde {
+	z-index:-30;
+	bottom:-6px;
+	left:85vw;
+}
+
+#thirteenlanyon {
+	z-index:-31;
+	bottom:-5px;
+	left:15vw;
+}
+
+#thirteenlanyon img {
+	transform:scaleX(-1);
+}
+
+/*--- PART FOURTEEN ---*/
+#hyde-to-jekyll {
+	z-index:-32;
+	bottom:-1vw;
+	right:0vw;
+	width:920px;
+	height:791px;
+	background:url(../images/hyde-to-jekyll2.png);
+	animation:hyde-to-jekyll 12s steps(4) infinite;
+}
+
+@keyframes hyde-to-jekyll {
+	from { background-position:0; }
+	to { background-position:-3688px; }
+}
+
+#fourteenlanyon {
+	z-index:-33;
+	bottom:-5px;
+	left:15vw;
+}
+
+#fourteenlanyon img {
+	height:400px;
+	transform:scaleX(-1);
+}
+
+/*--- footer ---*/
+footer {
+	font-family:'Niconne', cursive;
+	font-size:20px;
+	text-align:center;
+	bottom:0;
+	width:100%;
+	margin:20px 0;
+}
+
+/*--- SPEECH BUBBLES ---*/
+.speech-bubble {
+	position:relative;
+	background:#000;
+	border-radius:.4em;
+	padding:1%;
+}
+
+.speech-bubble:after {
+	content:'';
+	position:absolute;
+	bottom:0;
+	left:50%;
+	width:0;
+	height:0;
+	border:20px solid transparent;
+	border-top-color:#000;
+	border-bottom:0;
+	margin-left:-20px;
+	margin-bottom:-20px;
+}
+

@@ -1,0 +1,43 @@
+@charset "utf-8";
+/* CSS Document */
+
+@keyframes godzilla {
+	100% {left:40vw;}
+}
+
+@keyframes helicopter1 {
+	0% {transform:rotate(-30deg)}
+	100% {top:25vh; left:75vw; transform:translate(20%, 30px);}
+}
+
+@keyframes helicopter2 {
+	0% {transform:rotate(30deg);}
+	100% {top:20vh; left:20vw; transform:translate(-20%, 30px);}
+}
+
+@keyframes helicopter3 {
+	100% {top:50vh; left:85vw; transform:rotate(20deg);}
+}
+
+@keyframes jet1 {
+	0% {top:40vh; left:-5vh;}
+	100% {transform:rotate(-30deg);}
+}
+
+@keyframes jet2 {
+	0% {top:-5vh; left:-5vw;}
+	100% {transform:rotate(-10deg);}
+}
+
+@keyframes jet3 {
+	100% {left:-5vw;}
+}
+
+@keyframes fog {
+	0% {opacity:0;}
+	100% {opacity:1;}
+}
+
+@keyframes sun {
+	100% {background-color:#e2252b;}
+}

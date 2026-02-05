@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Mystic Mondays</title>
+<link rel="shortcut icon" href="logo/tarot cards.png">
+
+<!--- stylesheets --->
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/keyframes.css">
+
+<!--- fonts --->
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i" rel="stylesheet">
+
+</head>
+
+<body>
+	<main>
+		<!--- app description --->
+		<div class="content">
+			<section class="dcover">
+				<div class="desc">
+					<h1>Mystic Mondays</h1>
+					<p>Take the tarot with you wherever you go!</p>
+					
+					<a href="https://itunes.apple.com/us/app/mystic-mondays/id1233064572?mt=8" class="button"><span>App Store </span></a>
+					
+					<a href="https://play.google.com/store/apps/details?id=com.mysticmondays&hl=en" class="button"><span>Play Store </span></a>
+				</div>
+			</section>
+			
+			<!--- phone app --->
+			<section id="app">
+				<div class="phone">
+					<div id="screen">
+						<!--- draw card of the day --->
+						<button class="cardoftheday" onClick="openCard()"></button>
+						
+						<div id="myCard" class="drawcard">
+							<a href="#" class="closebtn" onClick="closeCard()">&times;</a>
+							<div class="card-desc">
+								<img src="images/daily card full.png" alt="">
+							</div>
+						</div>
+						
+						<!--- navigation
+						<div class="home"></div>
+						<div class="about"></div>
+						<div class="library"></div>
+						--->
+
+						<div class="tab">
+							<input type="radio" id="tab-1" name="tab-group-1" checked>
+							<label for="tab-1"></label>
+							<div class="tabcontent"><img src="images/home.png" alt="" /></div>
+						</div>
+
+						<div class="tab">
+							<input type="radio" id="tab-2" name="tab-group-1">
+							<label for="tab-2"></label>
+							<div class="tabcontent"><img src="images/about.png" alt="" /></div>
+						</div>
+
+						<div class="tab">
+							<input type="radio" id="tab-3" name="tab-group-1">
+							<label for="tab-3"></label>
+							<div class="tabcontent"><img src="images/library.png" alt="" /></div>
+						</div>
+
+					</div>
+				</div>
+			</section>
+			
+		  <section class="menulinks">
+			  <div class="cardlabel">
+			  	<div class="menu"><span class="menutext">pick</span></div>
+			  </div>
+			  
+			  <div class="appnavlabel">
+			  	<div class="menu"><span class="menutext">navigation</span></div>
+			  </div>
+			</section>
+		</div>
+	</main>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script>
+	function openCard() {
+		document.getElementById("myCard").style.height = "100%";
+	}
+	
+	function closeCard() {
+		document.getElementById("myCard").style.height = "0%";
+	}
+</script>
+
+</body>
+</html>

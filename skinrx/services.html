@@ -1,0 +1,244 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Services | Skin RX</title>
+<link rel="shortcut icon" href="favicon/skin rx logo.png">
+
+<!--- responsive meta tag --->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!--- stylesheets --->
+<link rel="stylesheet" href="css/slicknav.css">
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/grid.css">
+
+<link rel="stylesheet" href="css/responsive.css">
+
+<!--- fonts --->
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600,600i,700,700i|Courgette|Satisfy" rel="stylesheet">
+
+<!--- icons --->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+
+<!---  style my tooltips script --->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://static.tumblr.com/rzl30kg/eAxm7a751/jquery.style-my-tooltips.js"></script>
+
+<script type="text/javascript">
+	(function($){
+		$(document).ready(function(){
+			$("[title]").style_my_tooltips({
+				tip_follows_cursor:true,
+				tip_delay_time:200,
+				tip_fade_speed:300
+           });
+		});
+	})(jQuery);
+
+//navbar
+$(function () {
+  $(document).scroll(function () {
+	  var $nav = $(".navbar");
+	  $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+	});
+});
+</script>
+
+</head>
+
+<body>
+
+<!--- header --->
+<header class="navbar">
+		<div id="title" class="col-5 left">
+			<a href="index.html">skin rx</a>
+		</div>
+		
+		<!--- navigation --->
+		<nav class="col-7 left">
+			<ul id="menu">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><div class="mainmenu"><a href="services.html" class="active">services</a></div></li>
+				
+				<div class="sub">
+				<li>Services
+					<ul id="submenu">
+						<li><a href="services.html" class="active"><i>services page</i></a></li>
+						
+						<li><a href="facials.html">facials</a></li>
+						<li><a href="facialrejuv.html">facial rejuvenation</a></li>
+						<li><a href="peels.html">peels</a></li>
+						<li><a href="bodytreatments.html">body treatments</a></li>
+						<li><a href="bodysculpting.html"> body sculpting</a></li>
+						<li><a href="intravenous.html">intravenous nutrition</a></li>
+					</ul>
+				</li>
+				</div>
+				
+				<li><a href="products.html">Products</a></li>
+				<li><a href="promo.html">Promos</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+</header>
+
+<main>
+	<!--- featured --->
+	<div id="servicesfeatured">
+		<div class="container">
+			<div class="ahtxt">
+				<h1>services</h1>
+			</div>
+		</div>
+	</div>
+	
+	<section id="services">
+		
+		<div class="container">
+			<div class="col-8 center">
+				<!--- 1st row --->
+				<div class="col-6 left">
+					<div class="polaroid">
+						<img src="services/facial2.jpg" alt="" />
+						<div class="overlay">
+							<div class="more button"><a href="facials.html">read more...</a></div>
+						</div>
+						<h6><a href="facials.html">facials</a></h6>
+					</div>
+				</div>
+				
+				<div class="col-6 left">
+					<div class="polaroid">
+						<img src="services/facialrejuv1.jpg" alt="" />
+						<div class="overlay">
+							<div class="more button"><a href="facialrejuv.html">read more...</a></div>
+						</div>
+						<h6><a href="facialrejuv.html">facial rejuvenation</a></h6>
+					</div>
+				</div>
+				<!--- END row --->
+			</div>
+		</div>
+		
+		<div class="container">
+			<div class="col-8 center">
+				<!--- 2nd row --->
+				<div class="col-6 left">
+					<div class="polaroid">
+						<img src="services/facial3.jpg" alt="" />
+						<div class="overlay">
+							<div class="more button"><a href="peels.html">read more...</a></div>
+						</div>
+						<h6><a href="peels.html">peels</a></h6>
+					</div>
+				</div>
+				
+				<div class="col-6 left">
+					<div class="polaroid">
+						<img src="services/body1.jpg" alt="" />
+						<div class="overlay">
+							<div class="more button"><a href="bodytreatments.html">read more...</a></div>
+						</div>
+						<h6><a href="bodytreatments.html">body treatments</a></h6>
+					</div>
+				</div>
+				<!--- END row --->
+			</div>
+		</div>		
+		
+		<div class="container">
+			<div class="col-8 center">
+				<!--- 3rd row --->
+				<div class="col-6 left">
+					<div class="polaroid">
+						<img src="services/body2.jpg" alt="" />
+						<div class="overlay">
+							<div class="more button"><a href="bodysculpting.html">read more...</a></div>
+						</div>
+						<h6><a href="bodysculpting.html">body sculpting</a></h6>
+					</div>
+				</div>
+				
+				<div class="col-6 left">
+					<div class="polaroid">
+						<img src="services/skin rx intravenous.jpg" alt="" />
+						<div class="overlay">
+							<div class="more button"><a href="intravenous.html">read more...</a></div>
+						</div>
+						<h6><a href="intravenous.html">intravenous nutrition</a></h6>
+					</div>
+				</div>
+				<!--- END row --->
+			</div>
+		</div>
+		
+	</section>
+	
+</main>
+
+<!--- footer --->
+<footer>
+<div class="container">
+	<div class="col-4 left">
+		<div id="logo"><a href="index.html">skin rx</a></div>
+		
+		<!--- book an appointment --->
+		<p><a href="contact.html#book-an-appointment" class="btn">book now</a></p><br>
+		
+		<!--- subscribe newsletter --->
+		<p><strong>Subscribe to our Newsletter</strong></p>
+		<form action="#">
+			<input type="text" name="Email" placeholder="Email address" value="" required>
+			<button type="submit" onclick="alert('You have subscribed to our newsletter.')" value="Submit">subscribe</button>
+		</form>
+	</div>
+	
+	<div class="col-4 left">
+		<h6>address</h6>
+		<p><strong>quezon</strong>
+			<br>Unit 110 K-Zone Bldg EDSA corner NIA-NPO, Brgy. Piñahan. QC
+			<br>Tel: (02) 907 2509
+			<br>Mobile: 0917 8293 540 / 0925 7336 479
+			
+			<br><strong>cotabato</strong>
+			<br>Room 108, Cotabato Polymedic & Diagnostic Center, Gov. Gutierrez Ave., Cotabato City
+			<br>Mobile: 0935 3381 062 / 0999 9956 561
+		</p>
+	</div>
+	
+	<div class="col-4 left">
+		<h6>connect</h6>
+		<div id="social">
+			<a href="http://facebook.com/skinrxfaceandbodywellness" title="facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+			<a href="http://instagram.com/skinrxfaceandbody" title="instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+			<a href="mailto:skinrx_ph@yahoo.com" title="email"><i class="far fa-envelope" aria-hidden="true"></i></a>
+		</div>
+	</div>
+	
+	<div id="copyright" class="col-12 left text-center">
+		<p>Copyright &copy; 2018 Skin RX Face and Body Wellness. All rights reserved.</p>
+	</div>
+</div>
+</footer>
+
+<!--- slick nav --->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.slicknav.js"></script>
+<script type="text/javascript">
+     $(document).ready(function(){
+          $('#menu').slicknav({
+			  duration:400,
+			  brand:'SKIN RX'
+		  });
+     });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,105 @@
+[03-Dec-2019 06:29:46 America/New_York] PHP Parse error:  syntax error, unexpected '$row' (T_VARIABLE), expecting ',' or ';' in /home/kateafable/works.kateafable.com/azfellandco/index.php on line 78
+[03-Dec-2019 06:29:48 America/New_York] PHP Parse error:  syntax error, unexpected '$row' (T_VARIABLE), expecting ',' or ';' in /home/kateafable/works.kateafable.com/azfellandco/index.php on line 78
+[03-Dec-2019 06:30:14 America/New_York] PHP Parse error:  syntax error, unexpected '$row' (T_VARIABLE), expecting ',' or ';' in /home/kateafable/works.kateafable.com/azfellandco/index.php on line 78
+[03-Dec-2019 06:30:19 America/New_York] PHP Parse error:  syntax error, unexpected '$row' (T_VARIABLE), expecting ',' or ';' in /home/kateafable/works.kateafable.com/azfellandco/index.php on line 78
+[03-Dec-2019 06:30:49 America/New_York] PHP Parse error:  syntax error, unexpected '$row' (T_VARIABLE), expecting ',' or ';' in /home/kateafable/works.kateafable.com/azfellandco/home.php on line 78
+[03-Dec-2019 06:36:44 America/New_York] PHP Parse error:  syntax error, unexpected '}', expecting end of file in /home/kateafable/works.kateafable.com/azfellandco/index.php on line 79
+[03-Dec-2019 06:36:47 America/New_York] PHP Parse error:  syntax error, unexpected '}', expecting end of file in /home/kateafable/works.kateafable.com/azfellandco/index.php on line 79
+[03-Dec-2019 06:36:52 America/New_York] PHP Parse error:  syntax error, unexpected '}', expecting end of file in /home/kateafable/works.kateafable.com/azfellandco/index.php on line 79
+[03-Dec-2019 06:36:54 America/New_York] PHP Parse error:  syntax error, unexpected '}', expecting end of file in /home/kateafable/works.kateafable.com/azfellandco/index.php on line 79
+[03-Dec-2019 06:36:55 America/New_York] PHP Parse error:  syntax error, unexpected '}', expecting end of file in /home/kateafable/works.kateafable.com/azfellandco/index.php on line 79
+[22-Mar-2020 20:07:57 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_connect() in /home/kateafable/works.kateafable.com/azfellandco/dbconnect.php:8
+Stack trace:
+#0 /home/kateafable/works.kateafable.com/azfellandco/authors.php(2): include()
+#1 {main}
+  thrown in /home/kateafable/works.kateafable.com/azfellandco/dbconnect.php on line 8
+[25-Mar-2020 13:38:09 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_connect() in /home/kateafable/works.kateafable.com/azfellandco/dbconnect.php:8
+Stack trace:
+#0 /home/kateafable/works.kateafable.com/azfellandco/types.php(2): include()
+#1 {main}
+  thrown in /home/kateafable/works.kateafable.com/azfellandco/dbconnect.php on line 8
+[28-Mar-2020 13:34:08 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_connect() in /home/kateafable/works.kateafable.com/azfellandco/dbconnect.php:8
+Stack trace:
+#0 /home/kateafable/works.kateafable.com/azfellandco/books.php(2): include()
+#1 {main}
+  thrown in /home/kateafable/works.kateafable.com/azfellandco/dbconnect.php on line 8
+[10-Jun-2020 09:44:07 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_connect() in /home/kateafable/works.kateafable.com/azfellandco/dbconnect.php:8
+Stack trace:
+#0 /home/kateafable/works.kateafable.com/azfellandco/authors.php(2): include()
+#1 {main}
+  thrown in /home/kateafable/works.kateafable.com/azfellandco/dbconnect.php on line 8
+[12-Jun-2020 12:49:11 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_connect() in /home/kateafable/works.kateafable.com/azfellandco/dbconnect.php:8
+Stack trace:
+#0 /home/kateafable/works.kateafable.com/azfellandco/types.php(2): include()
+#1 {main}
+  thrown in /home/kateafable/works.kateafable.com/azfellandco/dbconnect.php on line 8
+[14-Jun-2020 22:33:15 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_connect() in /home/kateafable/works.kateafable.com/azfellandco/dbconnect.php:8
+Stack trace:
+#0 /home/kateafable/works.kateafable.com/azfellandco/books.php(2): include()
+#1 {main}
+  thrown in /home/kateafable/works.kateafable.com/azfellandco/dbconnect.php on line 8
+[07-Jul-2020 23:21:05 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_connect() in /home/kateafable/works.kateafable.com/azfellandco/dbconnect.php:8
+Stack trace:
+#0 /home/kateafable/works.kateafable.com/azfellandco/books.php(2): include()
+#1 {main}
+  thrown in /home/kateafable/works.kateafable.com/azfellandco/dbconnect.php on line 8
+[09-Jul-2020 12:17:44 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_connect() in /home/kateafable/works.kateafable.com/azfellandco/dbconnect.php:8
+Stack trace:
+#0 /home/kateafable/works.kateafable.com/azfellandco/authors.php(2): include()
+#1 {main}
+  thrown in /home/kateafable/works.kateafable.com/azfellandco/dbconnect.php on line 8
+[23-Sep-2020 12:28:58 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_connect() in /home/kateafable/works.kateafable.com/azfellandco/dbconnect.php:8
+Stack trace:
+#0 /home/kateafable/works.kateafable.com/azfellandco/types.php(2): include()
+#1 {main}
+  thrown in /home/kateafable/works.kateafable.com/azfellandco/dbconnect.php on line 8
+[27-Sep-2020 13:16:19 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_connect() in /home/kateafable/works.kateafable.com/azfellandco/dbconnect.php:8
+Stack trace:
+#0 /home/kateafable/works.kateafable.com/azfellandco/books.php(2): include()
+#1 {main}
+  thrown in /home/kateafable/works.kateafable.com/azfellandco/dbconnect.php on line 8
+[30-Sep-2020 11:28:22 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_connect() in /home/kateafable/works.kateafable.com/azfellandco/dbconnect.php:8
+Stack trace:
+#0 /home/kateafable/works.kateafable.com/azfellandco/books.php(2): include()
+#1 {main}
+  thrown in /home/kateafable/works.kateafable.com/azfellandco/dbconnect.php on line 8
+[08-Oct-2020 08:55:18 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_connect() in /home/kateafable/works.kateafable.com/azfellandco/dbconnect.php:8
+Stack trace:
+#0 /home/kateafable/works.kateafable.com/azfellandco/types.php(2): include()
+#1 {main}
+  thrown in /home/kateafable/works.kateafable.com/azfellandco/dbconnect.php on line 8
+[13-Oct-2020 06:42:31 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_connect() in /home/kateafable/works.kateafable.com/azfellandco/dbconnect.php:8
+Stack trace:
+#0 /home/kateafable/works.kateafable.com/azfellandco/authors.php(2): include()
+#1 {main}
+  thrown in /home/kateafable/works.kateafable.com/azfellandco/dbconnect.php on line 8
+[29-Oct-2020 15:10:45 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_connect() in /home/kateafable/works.kateafable.com/azfellandco/dbconnect.php:8
+Stack trace:
+#0 /home/kateafable/works.kateafable.com/azfellandco/books.php(2): include()
+#1 {main}
+  thrown in /home/kateafable/works.kateafable.com/azfellandco/dbconnect.php on line 8
+[01-Nov-2020 12:37:06 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_connect() in /home/kateafable/works.kateafable.com/azfellandco/dbconnect.php:8
+Stack trace:
+#0 /home/kateafable/works.kateafable.com/azfellandco/books.php(2): include()
+#1 {main}
+  thrown in /home/kateafable/works.kateafable.com/azfellandco/dbconnect.php on line 8
+[06-Apr-2025 21:56:35 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_connect() in /home/kateafable/works.kateafable.com/azfellandco/dbconnect.php:8
+Stack trace:
+#0 /home/kateafable/works.kateafable.com/azfellandco/books.php(2): include()
+#1 {main}
+  thrown in /home/kateafable/works.kateafable.com/azfellandco/dbconnect.php on line 8
+[19-Apr-2025 00:31:01 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_connect() in /home/kateafable/works.kateafable.com/azfellandco/dbconnect.php:8
+Stack trace:
+#0 /home/kateafable/works.kateafable.com/azfellandco/types.php(2): include()
+#1 {main}
+  thrown in /home/kateafable/works.kateafable.com/azfellandco/dbconnect.php on line 8
+[02-May-2025 21:53:15 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_connect() in /home/kateafable/works.kateafable.com/azfellandco/dbconnect.php:8
+Stack trace:
+#0 /home/kateafable/works.kateafable.com/azfellandco/authors.php(2): include()
+#1 {main}
+  thrown in /home/kateafable/works.kateafable.com/azfellandco/dbconnect.php on line 8
+[22-Dec-2025 06:22:38 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_connect() in /home/kateafable/works.kateafable.com/azfellandco/dbconnect.php:8
+Stack trace:
+#0 /home/kateafable/works.kateafable.com/azfellandco/books.php(2): include()
+#1 {main}
+  thrown in /home/kateafable/works.kateafable.com/azfellandco/dbconnect.php on line 8

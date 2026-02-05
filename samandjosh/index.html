@@ -1,0 +1,125 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Sam and Josh</title>
+
+<!--- responsive meta tag --->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!--- stylesheets --->
+<link rel="stylesheet" href="css/slicknav.min.css">
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/grid.css">
+
+<link rel="stylesheet" href="css/responsive.css">
+
+<!--- fonts --->
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!--- header --->
+<header>
+	<div class="container">
+		<div id="logo" class="col-4">
+			<img src="images/logo.png" alt="" />
+		</div>
+	
+		<!--- navigation --->
+		<nav class="col-8">
+			<ul id="menu">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="wedding.html">Our Wedding</a></li>
+				<li><a href="gallery.html">Gallery</a></li>
+			</ul>
+		</nav>
+	</div>
+</header>
+
+<main>
+	<!--- featured --->
+	<section id="featured">
+		<div class="container">
+			<div class="col-12">
+				<img src="images/logo_big.png" alt="" />
+				<h2>25.09.2019</h2>
+			</div>
+		</div>
+	</section>
+	
+  <section id="wedding">
+		<div class="container">
+			<div class="col-12">
+				<h1>Our Wedding</h1>
+				<h3>Join us we unite for love.</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo vel impedit, harum quod ratione hic nihil inventore aliquam commodi voluptates, in iusto error laboriosam nobis sequi alias quibusdam placeat fugiat.</p>
+			</div>
+			
+			<div class="col-6">
+				<div class="dark-box">
+					<h2>Ceremony</h2>
+				  	<p>We are getting married at St Paul’s Church. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor aenean massa.</p>
+					
+				  	<p>Saturday, 19 January 2019 <br>
+					  11:00am - 2:00pm <br>
+					  St Paul's Church</p>
+				</div>
+			</div>
+			
+			<div class="col-6">
+				<div class="dark-box">
+					<h2>Reception</h2>
+				  <p>We are getting married at St Paul’s Church. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor aenean massa.</p>
+					
+				  <p>Saturday, 19 January 2019 <br>
+						11:00am - 2:00pm <br>
+					  	St Paul's Church</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<!--- photo break --->
+	<section id="photo-break"></section>
+	
+	<!--- gallery --->
+	<section id="gallery">
+		<div class="container">
+			<div class="col-12">
+				<h1>Gallery</h1>
+				<h3>Share memories with us.</h3>
+			</div>
+			<!--- images --->
+			<div class="col-4 gallery-img"><img src="images/1.jpg" alt="" /></div>
+			<div class="col-4 gallery-img"><img src="images/2.jpg" alt="" /></div>
+			<div class="col-4 gallery-img"><img src="images/3.jpg" alt="" /></div>
+		</div>
+	</section>
+
+</main>
+
+<!--- footer --->
+<footer>
+	<div class="container">
+		<div class="col-12">
+			<small>&copy; Copyright 2018. Sam and Josh. For educational purposes only.</small>
+		</div>
+	</div>
+</footer>
+
+<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="js/jquery.slicknav.js"></script>
+<script type="text/javascript">
+     $(document).ready(function(){
+          $('#menu').slicknav(); 
+     }); 
+</script>
+
+</body>
+</html>

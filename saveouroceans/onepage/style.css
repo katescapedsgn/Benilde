@@ -1,0 +1,394 @@
+@charset "utf-8";
+/*--- tooltips ---*/
+#s-m-t-tooltip {
+	color:#666;
+	background-color:#fafafa;
+	font-size:10px;
+	font-family:'Open Sans', helvetica, sans-serif;
+	letter-spacing:1px;
+	text-transform:uppercase;
+	text-align:center;
+	position:absolute;
+	padding:3px 5px;
+	margin-top:30px;
+	border:1px solid #eee;
+	z-index:9999;
+}
+
+/*--- selection ---*/
+::-moz-selection{ background:#eee; color:#222; }
+::selection { background:#eee; color:#222; }
+ 
+/*--- scrollbar ---*/
+::-webkit-scrollbar {
+    width:7px;
+    height:7px;
+    background:#fff;
+}
+
+::-webkit-scrollbar-thumb {  
+    background-color:#052d49; /* scrollbar colour */
+	border:2px solid #fff;
+}
+
+::-webkit-scrollbar-track {
+	background-color:#eee; /* scrollbar colour */
+	border:2px solid #fff;
+}
+
+/*--- general ---*/
+body {
+	background:#fff;
+	background-size:cover;
+	margin:0;
+	font-family:'Montserrat', sans-serif;
+	font-size:14px;
+	overflow-x:hidden;
+}
+
+h1 {
+	font-family:'Open Sans', helvetica, sans-serif;
+	font-size:20px;
+	font-weight:700;
+	margin:20px 0px;
+	padding-top:5%;
+	text-transform:uppercase;
+	text-align:center;
+	letter-spacing:2px;
+}
+
+h2 {
+	font-family:'Open Sans', helvetica, sans-serif;
+	font-size:18px;
+	font-weight:700;
+	margin:20px 0px;
+	padding-top:5%;
+	text-transform:uppercase;
+	text-align:center;
+	letter-spacing:2px;
+}
+
+h3 {
+	font-family:'Open Sans', helvetica, sans-serif;
+	font-size:16px;
+	font-weight:700;
+	margin:20px 0px;
+	padding-top:5%;
+	text-transform:uppercase;
+	text-align:center;
+	letter-spacing:2px;
+}
+
+h4 {
+	font-size:12px;
+	font-weight:700;
+	margin:20px 0px;
+	padding:10px 0px;
+	letter-spacing:1px;
+	text-transform:uppercase;
+	border-bottom:1px solid #f96854;
+}
+
+h6 {
+	font-size:12px;
+	font-weight:700;
+	margin:20px 0px;
+	padding:10px 0px;
+	letter-spacing:1px;
+	text-transform:uppercase;
+	color:#f96854;
+	border-bottom:1px solid #f96854;
+}
+
+b, strong {
+	letter-spacing:2px;
+}
+i, em { font-style:italic; }
+
+p { text-align:left; }
+
+blockquote {
+    padding-left:10px;
+    margin:0;
+	border-left:1px solid #f96854;
+}
+
+a {
+	text-decoration:none;
+	color:#052d49; /* links colour */
+}
+
+a:hover {
+	color:#f96854; /* links hover colour */
+	cursor:pointer;
+}
+
+/*--- header ---*/
+#header {
+    width:100vw;
+    height:calc(100vh - 70px);
+    background-image:url('images/sea life htxt.png');
+    background-repeat:no-repeat;
+    background-attachment:relative;
+    background-size:cover;
+    background-position:center;
+    display:block;
+}
+
+#navi {
+    position:relative;
+    width:100vw;
+    height:70px;
+    background:#fff;
+    border:1px solid #eee;
+    z-index:9999!important;
+}
+
+.icon {
+    float:left;
+    padding:14px 20px;
+}
+
+.icon img {
+    width:40px;
+    height:40px;
+}
+
+.title {
+    position:relative;
+    margin-top:20px;
+    margin-left:70px;
+	width:500px;
+	letter-spacing:1px;
+    font-size:20px;
+    line-height:30px;
+    color:#222;
+	font-weight:600;
+    font-style:italic;
+    font-family:'Playfair Display', times, serif;
+}
+
+#nav {
+    position:relative;
+    float:right;
+    margin-right:15px;
+    margin-top:-20px;
+    text-align:right;
+    text-transform:uppercase;
+	font-weight:bold;
+}
+
+#nav ul {
+	list-style:none;
+	margin:-10px 0px;
+}
+
+#nav li {
+	float:left;
+	display:inline-flex;
+}
+
+#nav li a {
+	margin:10px;
+	color:#052d49;
+	text-decoration:none;
+}
+
+#nav li a:empty {
+	display:none;
+}
+
+#nav li a.active {
+	color:#f96854;
+	border-bottom:1px solid #f96854;
+}
+
+#nav li a:hover {
+	color:#f96854;
+	border-bottom:1px solid #f96854;
+}
+
+/*--- search bar ---*/
+.sb {
+    position:relative;
+    margin:-25px auto 0;
+	text-align:center;
+	color:#052d49;
+	z-index:-1;
+}
+
+.sb .search .query {
+    border:0;
+    outline:0;
+    padding:5px;
+    font-family:inherit;
+    font-size:12px;
+    color:#888;
+    background-color:transparent;
+}
+
+/*--- content ---*/
+.content {
+	margin:0 auto;
+	width:100vw;
+}
+
+#home {
+	width:90%;
+	padding:5%;
+	background:#f8f8f8;
+	color:#052d49;
+	overflow:hidden;
+}
+
+#about {
+	width:90%;
+	padding:5%;
+	background:#052d49;
+	color:#fff;
+	overflow:hidden;
+}
+
+#explore {
+	width:90%;
+	padding:5%;
+	background:#f8f8f8;
+	color:#052d49;
+	overflow:hidden;
+}
+
+#support {
+	width:90%;
+	padding:5%;
+	background:#052d49;
+	color:#fff;
+	overflow:hidden;
+}
+
+#contact {
+	height:100vh;
+	padding:5%;
+	background:url('images/beach aerial by egzon bytyqi large.jpg') no-repeat center center fixed;
+	color:#fff;
+	overflow:hidden;
+}
+
+/*--- gallery ---*/
+#album {
+	margin:10px auto;
+	width:calc((200px + 50px + 2px) * 5);
+	/* ((image width + 2*margin + 2*border width) * number of columns) */
+}
+
+#album .box {
+	position:block;
+	margin:50px 20px 50px;
+	width:200px; /* image width */
+	float:left;
+	background:#fff;
+}
+
+#album .box img {
+	position:relative;
+	width:200px; /* image width */
+}
+ 
+#album .box h1 {
+	position:relative;
+	text-transform:uppercase;
+	text-align:center;
+	font-weight:600;
+	font-size:14px;
+}
+
+/*--- form ---*/
+input {
+	height:20px;
+	width:250px;
+	border-radius:5px;
+	background-color:#fff;
+	font-family:'Montserrat', sans-serif;
+	margin:0px 10px 15px;
+	padding:5px;
+	font-weight:500;
+	border:none;
+}
+
+textarea {
+	width:95%;
+	height:70px;
+	font-family:'Montserrat', sans-serif;
+	font-weight:500;
+	background-color:#fff;
+	border-radius:5px;
+	margin:0px 10px;
+	padding:5px;
+	border:none;
+	margin-bottom:10px;
+}
+
+form {
+	padding-left:10px;
+}
+
+button {
+	font-family:'Montserrat', sans-serif;
+	background-color:#f96854;
+	border:none;
+	font-weight:500;
+	margin:0px 10px;
+	padding:5px;
+	width:150px;
+	border-radius:3px;
+	display:inline-block;
+}
+
+button:hover { font-weight:600; }
+
+/*-- contact --*/
+.contactbox {
+	margin-left:20px;
+	background-color:#ececec;
+	border:none;
+	padding:25px;
+	border-radius:1px;
+	opacity:1.0;
+}
+
+.contactinfo {
+	background-color:rgba(0, 0, 0, 0.7);
+	padding:25px;
+}
+
+/*-- social --*/
+#social {
+    position:relative;
+	margin:0 auto;
+	padding:5px 40px 5px 40px;
+    text-align:center;
+}
+
+#social i {
+    font-size:16px;
+	padding:7px;
+    margin:2px;
+	background:#fafafa;
+	border-bottom:1px solid #eee;
+}
+
+#social i:hover { background:#fff; }
+
+/*--- footer ---*/
+footer {
+	position:relative;
+	bottom:0;
+	margin:0 auto;
+	padding:20px;
+	background:#fff;
+	color:#052d49;
+	border:1px solid #eee;
+	text-align:center;
+	font-size:12px;
+	font-weight:600;
+	letter-spacing:.5px;
+}

@@ -1,0 +1,72 @@
+@charset "utf-8";
+/* CSS Document */
+img {
+	max-width:100%;
+}
+
+.slicknav_menu {
+	display:none;
+}
+
+[class*='col-'] {
+	padding:0 1.5%;
+	box-sizing:border-box;
+}
+
+/*--- small desktop screens ---*/
+@media all and (max-width: 1199px) {
+	
+}
+
+/*--- tablet landscapes ---*/
+@media all and (max-width: 1024px) {
+	h1 {
+		font-size:35px;
+	}
+
+	h2 {
+		font-size:30px;
+		margin-bottom:20px;
+	}
+
+	p {
+		font-size:15px;
+		line-height:150%;
+	}
+}
+
+/*--- tablet portrait ---*/
+@media all and (max-width: 768px) {
+	[class*='col-'] {
+		width:100%;
+	}
+
+	.js #menu {
+		display:none;
+	}
+
+	.slicknav_menu {
+		display:block;
+	}
+
+	header {
+		position:relative;
+	}
+
+	body {
+		margin:0;
+	}
+
+	h3 {
+		font-size:20px;
+	}
+
+	.container {
+		width:90%;
+	}
+}
+
+/*--- small mobile devices ---*/
+@media all and (max-width: 575px) {
+	
+}

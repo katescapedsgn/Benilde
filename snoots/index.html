@@ -1,0 +1,210 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>assessment</title>
+<link rel="shortcut icon" href='logo_brown.png'>
+
+<link rel="stylesheet" type ="text/css" href="style.css">
+<link rel="stylesheet" type ="text/css" href="grid.css">
+<link rel="stylesheet" type ="text/css" href="lightbox.css">
+
+<!--- fonts --->
+<link href='https://fonts.googleapis.com/css?family=Playfair+Display:700,700i' rel='stylesheet'>
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Raleway:500" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+
+<!--- icons --->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!--- scripts --->
+<script type="text/javascript" src="jquery-1.10.2.min.js"></script>
+
+<!--- tooltips script --->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="http://static.tumblr.com/rzl30kg/eAxm7a751/jquery.style-my-tooltips.js"></script>
+
+<script type="text/javascript">
+	(function($){
+		$(document).ready(function(){
+			$("[title]").style_my_tooltips({
+				tip_follows_cursor:true,
+				tip_delay_time:200,
+				tip_fade_speed:300
+           });
+		});
+	})(jQuery);
+	
+//sticky    
+$(function(){
+	var stickyRibbonTop = $('#navi').offset().top;
+	$(window).scroll(function(){
+		if( $(window).scrollTop() > stickyRibbonTop ) {
+			$('#navi').css({position: 'fixed', top: '0px'});
+		} else {
+			$('#navi').css({position: 'relative', top: '0px'});
+		}
+	});
+});
+</script>
+
+<script>  
+<!----- JQUERY FOR SLIDING NAVIGATION --->   
+$(document).ready(function() {
+  $('a[href*=#]').each(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+    && location.hostname == this.hostname
+    && this.hash.replace(/#/,'') ) {
+      var $targetId = $(this.hash), $targetAnchor = $('[name=' + this.hash.slice(1) +']');
+      var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
+       if ($target) {
+         var targetOffset = $target.offset().top;
+
+<!----- JQUERY CLICK FUNCTION REMOVE AND ADD CLASS "ACTIVE" + SCROLL TO THE DIV --->
+         $(this).click(function() {
+            $("#nav li a").removeClass("active");
+            $(this).addClass('active');
+           $('html, body').animate({scrollTop: targetOffset}, 1000);
+           return false;
+         });
+      }
+    }
+  });
+
+});
+</script>
+
+
+
+</head>
+
+<body>
+<div class="content">
+	<div id="navi">
+		<div class="icon"><img src='logo_brown.png' /></div>
+		<div class="title">snoots</div>
+		<nav id="nav">
+			<ul>
+				<li><a href="#about">why us</a></li>
+				<li><a href="#services">services</a></li>
+				<li><a href="#team">team</a></li>
+				<li><a href="#contact">contact</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div id="header"></div>
+	
+	<div id="about">
+	<section class="span10 center" style='margin-top:100px;'>
+		<h1>why us</h1>
+		
+		<section class="span6 left">
+		<img src='images/whyus.jpg' />
+		</section>
+		
+		<section class="span6 left">
+			<p>The team of snoots has been specializing in animal care since 1970. The trained staff goes through several courses even before attempting to care for pets. They are also licensed to do common medical procedures, as well as handle pets as trainers.</p>
+			<p>The facilities we have are also first-rate. The instruments are sterilized before use on each pet, and the equipment are the latest in technology. We have:</p>
+			<ul>
+				<li>Grooming Bath 300</li>
+				<li>Nail clipper by Ceasar Melon</li>
+				<li>MasterShearers</li>
+				<li>Shadow Enclosers</li>
+				<li>Customer area where you can watch dogs being groomed.</li>
+			</ul>
+		</section>
+	</section>
+	</div>
+	
+	<div id='services'>
+	<section class="span10 center" style='margin-top:100px;'>
+		<h1>services</h1>
+		<div id='col'>
+			<div class='box'>
+				<img src='images/service_haircut.jpg' />
+				<h1><a href='#'>haircut</a></h1>
+				<div class='t'>Our specialist will match the style of the cut to the breed of your dog.</div>
+			</div>
+			<div class='box'>
+				<img src='images/service_nailtrimming.jpg' />
+				<h1><a href='#'>nail trimming</a></h1>
+				<div class='t'>Our handlers are gentle and have trained in trimming dog nails.</div>
+			</div>
+			<div class='box'>
+				<img src='images/service_bath.jpg' />
+				<h1><a href='#'>bath</a></h1>
+				<div class='t'>Only the best products are used on your dogs for health and fragrance.</div>
+			</div>
+		</div>
+		
+	</section>
+	</div>
+	
+	<div id='team'>
+	<section class="span10 center" style='margin-top:100px;'>
+		<h1>the team</h1>
+		
+		<section class='span3 left'>
+			<img src='images/team01_sterling.jpg' />
+			<h4><a href='#'>jessica sterling</a></h4>
+			<p>Our master handler took finished her degree in the prestigious Vidal School for Pets. She oversees all the operations. Her specialty is handling difficult dogs.</p>
+		</section>
+		
+		<section class='span3 left'>
+			<img src='images/team02_white.jpg' />
+			<h4><a href='#'>maureen white</a></h4>
+			<p>There is no dog haircut unlike that of Maureen. She finished at the New York College of canine grooming. Her delicate style and knowledge of breeds makes her the best in the industry.</p>
+		</section>
+		
+		<section class='span3 left'>
+			<img src='images/team03_vereno.jpg' />
+			<h4><a href='#'>ben vereno</a></h4>
+			<p>Cutting dog nails is not very easy, but with the calm style of Ben, any dog submits to this task. It is not wonder that pets are keen with Ben as he has been handling dogs since he was seventeen.</p>
+		</section>
+		
+		<section class='span3 left'>
+			<img src='images/team04_zola.jpg' />
+			<h4><a href='#'>candice zola</a></h4>
+			<p>Doggy baths are not simply wetting and shampooing. It is also important to know how to get into the hard-to-reach areas; and Candice knows exactly how to go about it.</p>
+		</section>
+	</section>
+	</div>
+	
+	<div id='contact'>
+	<section class="span10 center" style='margin-top:100px;'>
+		<h1>contact</h1>
+		
+		<section class='span8 left'>
+			<img src='images/map.JPG' />
+		</section>
+		
+		<section class='span4 left'>
+			<p>Address: Unit 17 Wilson Building, 36 George Street, Burwood, Sydney, Australia</p>
+			<p>Phone: +4 321 789 3345</p>
+			<p>Email: customercare@snoots.com</p>
+		</section>
+	</section>
+	</div>
+
+<footer>
+	<div class='logo'><img src='logo_white.png' /></div>
+		
+	<div id="social">
+		<a href="#" title="linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+		<a href="#" title="facebook"><i class="fa fa-facebook-f" aria-hidden="true"></i></a>
+		<a href="#" title="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+		<a href="#" title="google"><i class="fa fa-google" aria-hidden="true"></i></a>
+		<a href="#" title="instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+		<a href="#" title="youtube"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+		<a href="#" title="pinterest"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+	</div>
+	
+	<br>&copy; 2018 Snoots. All rights reserved. For educational purposes only.
+	<br>Designed by Kate Tacastacas
+</footer>
+
+</div>
+</body>
+</html>

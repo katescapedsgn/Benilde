@@ -1,0 +1,162 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin:0;
+	padding:0;
+}
+
+body {
+	font-family: 'PT Sans', helvetica, sans-serif;
+	background:#000;
+	color:#fff;
+}
+
+/*--- typography ---*/
+h1, h2, h3, h4, h5, h6 {
+	font-weight:600;
+	text-transform:uppercase;
+}
+
+p {
+	font-weight:300;
+	line-height:2;
+	margin-bottom:20px;
+}
+
+small { font-size:10px; }
+
+a {
+	text-decoration:none;
+	text-transform:uppercase;
+	color:#fff;
+	letter-spacing:2px;
+}
+
+/*--- general ---*/
+img {
+	max-width:100%;
+}
+
+.container {
+	width:80%;
+	margin:0 auto;
+	overflow:hidden;
+}
+
+/*--- navigation ---*/
+nav {
+	width:100%;
+	height:70px;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+	background:rgba(0, 0, 0, 0.5);
+	text-align:center;
+	position:fixed;
+	top:0;
+	z-index:9999;
+}
+
+nav ul {
+	list-style:none;
+}
+
+nav li {
+	display:inline-block;
+}
+
+nav a {
+	display:block;
+	height:70px;
+	line-height:70px;
+	padding:0px 20px;
+	transition:all 0.4s ease-in-out;
+}
+
+nav a:hover {
+	background:rgba(255, 255, 255, 0.5);
+}
+
+/*--- home page ---*/
+body.home {
+	background:url('../images/background.jpg') #000 no-repeat top center;
+	background-size:cover;
+	background-attachment:fixed;
+}
+
+#title {
+	text-align:center;
+	box-sizing:border-box;
+	min-height:70vh;
+	padding:15vh 0;
+}
+
+#logo {
+	margin-bottom:30px;
+}
+
+.button {
+	padding:20px 0;
+}
+
+.button a {
+	display:inline-block;
+	padding:20px;
+	background:rgba(255, 255, 255, 0.1);
+	border:1px solid #fff;
+}
+
+.button a:hover {
+	background:rgba(0, 0, 0, 0.8);
+	transition:all 0.4s ease-in-out;
+}
+
+/*--- video bg ---*/
+#video-bg {
+	position:fixed;
+	z-index:-1;
+	min-height:100%;
+	min-width:100%;
+	top:0;
+	left:0;
+	object-fit:cover;
+}
+
+/*--- footer ---*/
+footer {
+	text-align:center;
+}
+
+#copyright {
+	font-size:14px;
+	color:#666;
+	padding-bottom:20px;
+	text-transform:uppercase;
+}
+
+/*--- featherlight ---*/
+#trailer-wrapper {
+	display:none;
+}
+
+/*--- gallery page ---*/
+#gallery {
+	padding-bottom:30px;
+}
+
+/*--- synopsis page ---*/
+body.synopsis {
+	background:url('../images/bg03.jpg') #000 no-repeat top center;
+	background-size:cover;
+	background-attachment:fixed;
+}
+
+#synopsis {
+	min-height:40vh;
+	padding:20vh 0 10vh;
+	box-sizing:border-box;
+}
+
+.content {
+	background-color:rgba(0, 0, 0, .5);
+	padding: 30px;
+	border-radius:2px;
+}

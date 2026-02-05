@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1,
+width=device-width, height=device-height, target-densitydpi=device-dpi" />
+    <title>Record App</title>
+
+    <!--- stylesheets --->
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+
+    <!--- flexboxgrid --->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" type="text/css">
+
+</head>
+
+<body>
+    <!--- record video --->
+    <div class="row">
+        <div class="col-xs-12" style="margin-bottom: 20px;">
+            <h1 id="header"></h1>
+        </div>
+
+        <div class="col-xs-12" style="margin-bottom: 20px;">
+            <button id="start">Start Recording</button>
+            <button id="stop" disabled>Stop Recording</button>
+            <button id="save" disabled>Save Recording</button>
+        </div>
+
+        <div class="col-xs-12" style="margin-bottom: 20px;">
+            <video id="video-preview" autoplay playsinline muted="false" volume="1"></video>
+            <img id="logo" src="img/kamate.png" style="display: none;">
+        </div>
+		
+		<!--- multiparty --->
+		<div class="col-xs-12" id="upload">
+			<form enctype="multipart/form-data" method="POST" action="http://localhost:5000/uploads">
+				<input id="btn-upload" type="file" name="upload" multiple="multiple" />
+            	<button type="submit">Upload File</button>
+       	  </form>
+		</div>
+		
+    </div>
+    
+
+<script type="text/javascript" src="node_modules/recordrtc/RecordRTC.js"></script>
+<script type="text/javascript" src="node_modules/multiparty/index.js"></script>
+
+<script type="text/javascript" src="js/index.js"></script>
+
+</body>
+</html>

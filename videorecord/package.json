@@ -1,0 +1,18 @@
+{
+  "name": "recordrtc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "multiparty": "^4.2.1",
+    "recordrtc": "^5.5.8",
+    "recordrtc-nodejs": "^1.0.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

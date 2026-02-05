@@ -1,0 +1,163 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Contact | Save Our Oceans</title>
+<link rel="shortcut icon" href='icons/seashell.png'>
+
+<!--- stylesheets --->
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/grid.css">
+<link rel="stylesheet" type="text/css" href="css/my-lightbox.css">
+
+<!--- fonts --->
+<link href='https://fonts.googleapis.com/css?family=Playfair+Display:700,700i' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:600,600italic,700,700italic' rel='stylesheet'>
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+<!--- icons --->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!--- tooltips script --->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="http://static.tumblr.com/rzl30kg/eAxm7a751/jquery.style-my-tooltips.js"></script>
+
+<script type="text/javascript">
+	(function($){
+		$(document).ready(function(){
+			$("[title]").style_my_tooltips({
+				tip_follows_cursor:true,
+				tip_delay_time:200,
+				tip_fade_speed:300
+           });
+		});
+	})(jQuery);
+
+//sticky    
+$(function(){
+	var stickyRibbonTop = $('#navi').offset().top;
+	$(window).scroll(function(){
+		if( $(window).scrollTop() > stickyRibbonTop ) {
+			$('#navi').css({position: 'fixed', top: '0px'});
+		} else {
+			$('#navi').css({position: 'relative', top: '0px'});
+		}
+	});
+});
+</script>
+
+<script>  
+<!----- JQUERY FOR SLIDING NAVIGATION --->   
+$(document).ready(function() {
+  $('a[href*=#]').each(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+    && location.hostname == this.hostname
+    && this.hash.replace(/#/,'') ) {
+      var $targetId = $(this.hash), $targetAnchor = $('[name=' + this.hash.slice(1) +']');
+      var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
+       if ($target) {
+         var targetOffset = $target.offset().top;
+
+<!----- JQUERY CLICK FUNCTION REMOVE AND ADD CLASS "ACTIVE" + SCROLL TO THE DIV --->
+         $(this).click(function() {
+            $("#nav li a").removeClass("active");
+            $(this).addClass('active');
+           $('html, body').animate({scrollTop: targetOffset}, 1000);
+           return false;
+         });
+      }
+    }
+  });
+
+});
+</script>
+
+</head>
+
+<body>
+<!--- navigation --->
+<div id="navi">
+	<div class="icon"><img src="icons/sea-snail.png" alt="" /></div>
+	<div class="title">
+		<a href="index.html">Save Our Oceans</a>
+	</div>
+	<nav id="nav">
+		<ul>
+			<li><a href="about.html">about</a></li>
+			<li><a href="explore.html">explore</a></li>
+			<li><a href="support.html">take action</a></li>
+			<li><a href="contact.html" class="active">contact</a></li>
+		</ul>
+    </nav>
+</div>
+
+<!--- main --->
+<main>
+
+<!--- contact header --->
+<div id="contactheader">
+	<div class="container">
+		<div class="span12 center">
+			<div class="aht">contact</div>
+			<p style="text-align:center;"><b>Thank you for visiting!</b></p>
+		</div>
+	</div>
+</div>
+
+<!--- contact --->
+<div id="contact">
+	<div class="container">
+	<div class="span12 center">
+		<div class="span6 left">
+			<h1>get in touch</h1>
+			<p>Please fill out this quick form and we will be in touch as soon as we can.</p>
+			<div class="contactbox">
+				<form action="#contact">
+					<input type="text" name="Name" placeholder="Name" value="" required>
+					
+					<input type="text" name="Email" placeholder="Email" value="" required>
+					
+					<textarea type="text" name="Message" placeholder="Message" value="" required></textarea>
+					
+					<button type="submit" onclick="alert('Your message has been submitted.')" value="Submit">SUBMIT</button>
+				</form>
+			</div>
+		</div>
+		
+		<div class="span5 left">
+			<div class="contactinfo">
+				<h6>email</h6>
+				<p>feedback@saveouroceans.ph</p>
+				<h6>phone</h6>
+				<p>(02) 536 6752</p>
+				<h6>office</h6>
+				<p>De La Salle-College of Saint Benilde<br>
+					School of Design and Arts<br>
+					950 Pablo Ocampo Street<br>
+					Malate, Manila<br>
+					1004 Metro Manila<br></p>
+			</div>
+		</div>
+	</div>
+	</div>
+</div>
+
+</main>
+
+
+<!--- footer --->
+<footer>
+	<div id="social">
+		<a href="http://facebook.com" title="facebook"><i class="fa fa-facebook-f" aria-hidden="true"></i></a>
+		<a href="http://twitter.com" title="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+		<a href="http://instagram.com" title="instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+		<a href="http://youtube.com" title="youtube"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+		<a href="http://google.com" title="google plus"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+		<a href="http://behance.net" title="behance"><i class="fa fa-behance" aria-hidden="true"></i></a>
+		<a href="http://pinterest.com" title="pinterest"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+	</div>
+	<br>&copy; 2018 Save Our Oceans. All rights reserved. For educational purposes only.
+</footer>
+
+</body>
+</html>

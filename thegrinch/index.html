@@ -1,0 +1,303 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>How the Grinch Stole Christmas!</title>
+
+<!--- fonts --->
+<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+
+<!--- stylesheets --->
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/grid.css">
+
+<!--- animate css --->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+</head>
+
+<body data-enllax-ratio="0.75">
+	<!--- navigation --->
+	<nav>
+		<ul>
+			<li class="current"><a href="#one">1</a></li>
+			<li><a href="#two">2</a></li>
+			<li><a href="#three">3</a></li>
+			<li><a href="#four">4</a></li>
+			<li><a href="#five">5</a></li>
+			<li><a href="#six">6</a></li>
+			<li><a href="#seven">7</a></li>
+		</ul>
+	</nav>
+	
+	<!---- HOW TO CUSTOMISE YOUR ELEMENTS
+	TEMPLATE FOR NEW PARALLAX ELEMENTS:
+		<div class="element" id="element-1"><img src="#" alt="" /></div>
+		<div class="element" id="element-2"><img src="#" alt="" /></div>
+	
+	POSITION ELEMENT IN CSS FILE:
+	NOTE: Use z-index to position one element in front of another. In this example, #element-1 is in FRONT of #element-2
+		#element-1 {
+			top:10vh;
+			left:10vw;
+			z-index:-1;
+		}
+		#element-2 {
+			bottom:20vh;
+			right:30vw;
+			z-index:-2;
+		}
+		
+	ADD ENLLAX CODE IF YOU HAVE POSITIONED YOUR ELEMENT:
+	CHECK https://github.com/mmkjony/enllax.js for instructions!
+		<div class="element" id="element-1" data-enllax-ratio=".5" data-enllax-type="foreground" data-enllax-direction="horizontal">
+			<img src="#" alt="" />
+		</div>
+	---->
+	
+	
+	<!--- main --->
+	<main>
+		<!--- PART ONE --->
+		<section id="one">
+			<div class="container">
+				<div class="col-12" id="title">
+					<img class="animated fadeInDown" src="images/logo.png" alt="" />
+				</div>
+			</div>
+			
+			<!--- PARALLAX ELEMENTS --->
+			<div class="element" id="element-1" data-enllax-ratio=".3" data-enllax-type="foreground" data-enllax-direction="horizontal">
+				<img src="images/room/grinch right.png" alt="" />
+			</div>
+			
+			<div class="element" id="element-2" data-enllax-ratio="-.25" data-enllax-type="foreground" data-enllax-direction="horizontal">
+				<img src="images/roof/chimney1.png" alt="" />
+			</div>
+			
+			<div class="element" id="element-3" data-enllax-ratio="-.5" data-enllax-type="foreground">
+				<img src="images/roof/stars.png" alt="" />
+			</div>
+			
+			<div class="element" id="element-4" data-enllax-ratio=".15" data-enllax-type="foreground">
+				<img src="images/roof/city.png" alt="" />
+			</div>
+		</section>
+		
+		<!--- PART TWO --->
+		<section id="two">
+			<div class="container">
+				<div class="col-12 text">
+					<p>Every Who down in Who-ville, the tall and the small, 
+						<br>would stand close together, with Christmas bells ringing.</p>
+					<p>They'd sing! And they'd sing! <br>And they'd SING! SING! SING! SING!</p>
+				</div>
+			</div>
+			
+			<!--- PARALLAX ELEMENTS --->
+			<div class="element" id="element-5" data-enllax-ratio="-.5" data-enllax-type="foreground" data-enllax-direction="horizontal">
+				<img src="images/town/carolers group.png" alt="" />
+			</div>
+			
+			
+			<div class="element" id="element-6" data-enllax-ratio="-.5" data-enllax-type="foreground" data-enllax-direction="horizontal">
+				<img src="images/town/snow.png" alt="" />
+			</div>
+			
+			<div class="element" id="element-7" data-enllax-ratio=".5" data-enllax-type="foreground" data-enllax-direction="horizontal">
+				<img src="images/town/snow flip.png" alt="" />
+			</div>
+			
+			<div class="element" id="element-8" data-enllax-ratio=".5">
+				<img src="images/town/lamppost.png" alt="" />
+			</div>
+			
+			<div class="element" id="element-9" data-enllax-ratio=".3" data-enllax-type="foreground" data-enllax-direction="horizontal">
+				<img src="images/town/christmas tree.png" alt="" />
+			</div>
+		</section>
+		
+		<!--- PART THREE --->
+		<section id="three">
+			<div class="container">
+				<div class="col-12 text">
+					<p>And then! Oh, the noise! Oh, the NOISE! NOISE! NOISE! NOISE!</p>
+					<p>“I must stop this whole thing! Why, for FIFTY-THREE YEARS I’ve put up with it now! 
+						I MUST stop this Christmas from coming! <br>…But HOW?”</p>
+				</div>
+			</div>
+			
+			<!--- PARALLAX ELEMENTS --->
+			<div class="element animated flash" id="element-10">
+				<img src="images/fireworks/fireworks.png" alt="" />
+			</div>
+			
+			<div class="element animated flash" id="element-11">
+				<img src="images/fireworks/fire sparkles.png" alt="" />
+			</div>
+			
+			<div class="element" id="element-12">
+				<img src="images/fireworks/city.png" alt="" />
+			</div>
+			
+			<div class="element animated slideInUp" id="element-13">
+				<img src="images/fireworks/fire rockets.png" alt="" />
+			</div>
+		</section>
+		
+		<!--- PART FOUR --->
+		<section id="four">
+			<div class="container">
+				<div class="col-6 text">
+					<p>Then he got an idea! <br>An awful idea! <br>THE GRINCH <br>GOT A WONDERFUL, AWFUL IDEA!</p>
+				</div>
+				<div class="col-6 text">
+					<p>“I know just what to do!” The Grinch laughed in his throat.
+						<br>And he chuckled, and clucked, “What a great Grinchy trick!
+						<br>“With this coat and this hat, I look just like Saint Nick!”</p>
+				</div>
+			</div>
+			
+			<!--- PARALLAX ELEMENTS --->
+			<div class="element" id="element-14" data-enllax-ratio="-.2" data-enllax-type="foreground" data-enllax-direction="horizontal">
+				<img src="images/grinch/grinch as santa.png" alt="" />
+			</div>
+			
+			<div class="element" id="element-15" data-enllax-ratio=".5">
+				<img style="width:100%;" src="images/grinch/land.png" alt="" />
+			</div>
+			
+			
+			<div class="element" id="element-16" data-enllax-ratio=".5">
+				<img style="width:100%;" src="images/grinch/trees.png" alt="" />
+			</div>
+			
+			<div class="element" id="element-17" data-enllax-ratio="-.3" data-enllax-type="foreground" data-enllax-direction="horizontal">
+				<img src="images/grinch/christmas tree.png" alt="" />
+			</div>
+			
+			<div class="element" id="element-18" data-enllax-ratio=".3" data-enllax-type="foreground" data-enllax-direction="horizontal">
+				<img src="images/grinch/santa surprise.png" alt="" />
+			</div>
+		</section>
+		
+		<!--- PART FIVE --->
+		<section id="five">
+			<div class="container">
+				<div class="col-12 text">
+					<p>All the Whos were all dreaming sweet dreams without care.
+						<br>Then he slid down the chimney. A rather tight pinch.
+						<br>Where the little Who stockings all hung in a row.
+						<br>“These stockings,” he grinned, “are the first things to go!”
+					</p>
+				</div>
+			</div>
+			
+			<!--- PARALLAX ELEMENTS --->
+			<div class="element" id="element-19" data-enllax-ratio="-1" data-enllax-type="foreground" data-enllax-direction="horizontal">
+				<img src="images/room/grinch left.png" alt="" />
+			</div>
+			
+			<div class="element animated fadeOutRight" id="element-20">
+				<img src="images/room/sock red small.png" alt="" />
+			</div>
+			
+			<div class="element animated fadeOutRight" id="element-21">
+				<img src="images/room/sock yellow small.png" alt="" />
+			</div>
+			
+			<div class="element animated fadeOutRight" id="element-22">
+				<img src="images/room/sock green small.png" alt="" />
+			</div>
+			
+			<div class="element" id="element-23" data-enllax-ratio=".5" data-enllax-type="foreground" data-enllax-direction="horizontal">
+				<img src="images/room/tree full.png" alt="" />
+			</div>
+			
+			<div class="element" id="element-24" data-enllax-ratio=".5" data-enllax-type="foreground">
+				<img src="images/room/wreath.png" alt="" />
+			</div>
+			
+			<div class="element" id="element-25">
+				<img src="images/room/fireplace3 big.png" alt="" />
+			</div>
+		</section>
+		
+		<!--- PART SIX --->
+		<section id="six">
+			<div class="container">
+				<div class="col-6 text">
+					<p>Then he slithered and slunk, with a smile most unpleasant,
+						<br>Around the whole room, and he took every present!</p>
+				</div>
+				
+				<div class="col-6 text">
+					<p>And he stuffed them in bags. Then the Grinch, very nimbly,
+						<br>Stuffed all the bags, one by one, up the chimbley!</p>
+					<p>“And NOW!” grinned the Grinch, “I will stuff up the tree!”</p>
+				</div>
+			</div>
+			
+			<!--- PARALLAX ELEMENTS --->
+			<div class="element" id="element-26" data-enllax-ratio="-.3" data-enllax-type="foreground" data-enllax-direction="horizontal">
+				<img src="images/room/grinch gifts left.png" alt="" />
+			</div>
+			
+			<div class="element" id="element-27" data-enllax-ratio=".5" data-enllax-type="foreground">
+				<img src="images/room/tree fallen.png" alt="" />
+			</div>
+			
+			<div class="element" id="element-28">
+				<img src="images/room/fireplace3 big.png" alt="" />
+			</div>
+		</section>
+		
+		<!--- PART SEVEN --->
+		<section id="seven">
+			<div class="container">
+				<div class="col-12 text">
+					<p>Then he went up the chimney, himself, the old liar.
+						<br>On their walls he left nothing...</p>
+					<p>And the one speck of food that he left in the house,
+						<br>Was a crumb that was even too small for a mouse.</p>
+				</div>
+			</div>
+			
+			<!--- PARALLAX ELEMENTS --->
+			<div class="element" id="element-29" data-enllax-ratio="-.5" data-enllax-type="foreground" data-enllax-direction="horizontal">
+				<img src="images/mouse/mouse right.png" alt="" />
+			</div>
+			
+			<div class="element" id="element-30" data-enllax-ratio=".3" data-enllax-type="foreground" data-enllax-direction="horizontal">
+				<img src="images/mouse/cookie crumb.png" alt="" />
+			</div>
+		</section>
+		
+	</main>
+	
+<!--- footer --->
+<footer>excerpts from How the Grinch Stole Christmas! by Dr. Seuss
+	<br>Copyright 2018. For educational purposes only.</footer>
+
+<!--- jquery library --->
+<script src="js/jquery.min.js"></script>
+
+<!--- one page navigation --->
+<script src="js/jquery.nav.js"></script>
+
+<!--- enlax for parallax --->
+<script src="js/jquery.enllax.min.js"></script>
+
+<script>
+$('nav').onePageNav({
+	currentClass: 'current',
+	changeHash: false,
+	scrollSpeed: 2000
+});
+
+//enlax activation
+$(window).enllax();
+</script>
+	
+</body>
+</html>

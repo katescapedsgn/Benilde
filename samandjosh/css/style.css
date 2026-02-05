@@ -1,0 +1,149 @@
+@charset "utf-8";
+/*--- scrollbar ---*/
+::-webkit-scrollbar {
+    width:5px;
+    background:#fff;
+}
+
+::-webkit-scrollbar-thumb {  
+    background-color:#b9a887; /* scrollbar colour */
+}
+
+::-webkit-scrollbar-track {
+	background-color:#eee; /* scrollbar colour */
+}
+
+/*--- general ---*/
+body{
+	margin:0;
+	font-family:'Lora', serif;
+	background:#fafafa;
+	margin-top:95px;
+}
+
+h1 {
+	font-size:50px;
+	font-family:'Playfair Display', serif;
+	margin:0;
+	color:#b9a887;
+}
+
+h2 {
+	font-size:40px;
+	font-family:'Playfair Display', serif;
+	margin:0;
+}
+
+h3 {
+	font-size:25px;
+	margin-top:0;
+}
+
+p {
+	line-height:180%;
+}
+
+/*--- general ---*/
+.container {
+	width:80%;
+	margin:0 auto;
+	overflow:hidden;
+}
+
+section {
+	width:100%;
+	padding:5% 0;
+}
+
+/*--- header ---*/
+header {
+	background:#fff;
+	width:100%;
+	box-shadow:0 5px 5px rgba(0, 0, 0, 0.2);
+	top:0;
+	height:95px;
+	position:fixed;
+}
+
+#logo {
+	margin:15px 0;
+}
+
+nav ul#menu {
+	float:right;
+}
+
+nav ul#menu li {
+	display:inline-block;
+	padding:20px 0 0 25px;
+}
+
+nav ul#menu a {
+	color:#111;
+	text-decoration:none;
+	text-transform:uppercase;
+}
+
+nav ul#menu a:hover { color:#bad0f1; }
+
+nav ul#menu a.active { color:#bad0f1; }
+
+/*--- featured ---*/
+#featured {
+	background:url('../images/featured_bg.jpg') no-repeat bottom;
+	background-size:cover;
+	background-attachment:fixed;
+	height:70vh;
+	text-align:center;
+	color:#fff;
+	box-sizing:border-box;
+	padding-top:25vh;
+}
+
+/*--- wedding ---*/
+#wedding {
+	background:url('../images/paper.png') repeat;
+	text-align:center;
+}
+
+/*--- #wedding p {
+	max-width:800px;
+	margin:0 auto;
+} ---*/
+
+.dark-box {
+	background:#333;
+	margin:30px 20px;
+	padding:30px;
+	color:#fff;
+	border-radius:3px;
+}
+
+/*--- photo break ---*/
+#photo-break {
+	background:url('../images/featured2_bg.jpg') no-repeat center;
+	height:50vh;
+	background-size:cover;
+	background-attachment:fixed;
+}
+
+/*--- gallery ---*/
+#gallery {
+	text-align:center;
+}
+
+.gallery-img {
+	margin-top:30px;
+}
+
+/*--- footer ---*/
+footer {
+	background:#333;
+	color:#fff;
+	text-align:center;
+	padding:20px;
+}
+
+footer small {
+	font-size:12px;
+}

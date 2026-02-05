@@ -1,0 +1,289 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Promos | Skin RX</title>
+<link rel="shortcut icon" href="favicon/skin rx logo.png">
+
+<!--- responsive meta tag --->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!--- stylesheets --->
+<link rel="stylesheet" href="css/slicknav.css">
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/grid.css">
+
+<link rel="stylesheet" href="css/responsive.css">
+
+<!--- fonts --->
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600,600i,700,700i|Courgette|Satisfy" rel="stylesheet">
+
+<!--- icons --->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+
+<!---  style my tooltips script --->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://static.tumblr.com/rzl30kg/eAxm7a751/jquery.style-my-tooltips.js"></script>
+
+<script type="text/javascript">
+	(function($){
+		$(document).ready(function(){
+			$("[title]").style_my_tooltips({
+				tip_follows_cursor:true,
+				tip_delay_time:200,
+				tip_fade_speed:300
+           });
+		});
+	})(jQuery);
+
+//navbar
+$(function () {
+  $(document).scroll(function () {
+	  var $nav = $(".navbar");
+	  $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+	});
+});
+</script>
+
+</head>
+
+<body>
+
+<!--- header --->
+<header class="navbar">
+		<div id="title" class="col-5 left">
+			<a href="index.html">skin rx</a>
+		</div>
+		
+		<!--- navigation --->
+		<nav class="col-7 left">
+			<ul id="menu">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><div class="mainmenu"><a href="services.html">services</a></div></li>
+				
+				<div class="sub">
+				<li>Services
+					<ul id="submenu">
+						<li><a href="services.html"><i>services page</i></a></li>
+						<li><a href="facials.html">facials</a></li>
+						<li><a href="facialrejuv.html">facial rejuvenation</a></li>
+						<li><a href="peels.html">peels</a></li>
+						<li><a href="bodytreatments.html">body treatments</a></li>
+						<li><a href="bodysculpting.html"> body sculpting</a></li>
+						<li><a href="intravenous.html">intravenous nutrition</a></li>
+					</ul>
+				</li>
+				</div>
+				
+				<li><a href="products.html">Products</a></li>
+				<li><a href="promo.html" class="active">Promos</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+</header>
+
+<main>
+	<!--- featured --->
+	<div id="promofeatured">
+		<div class="container">
+			<div class="ahtxt">
+				<h1>yearly promos</h1>
+			</div>
+		</div>
+	</div>
+	
+	<section id="card">
+		<div class="container">
+			<div class="col-12 center">
+				<!--- portfolio gallery grid --->
+				<div class="row">
+					<div class="column">
+						<div class="img-card">
+							<a href="#bday"><img src="promo/birthday package.png" alt="" class="hover-shadow" /></a>
+							<div class="cardtext"><a href="#bday">Its your birthday!</a></div>
+						</div>
+					</div>
+						
+					<div class="column">
+						<div class="img-card">
+							<a href="#bff"><img src="promo/bestfriends package.png" alt="" class="hover-shadow" /></a>
+							<div class="cardtext"><a href="#bff">BFFs</a></div>
+						</div>
+					</div>
+						
+					<div class="column">
+						<div class="img-card">
+							<a href="#wedding"><img src="promo/wedding floral package.png" alt="" class="hover-shadow" /></a>
+							<div class="cardtext"><a href="#wedding">Bribe the Bride</a></div>
+						</div>
+					</div>
+						
+					<div class="column">
+						<div class="img-card">
+							<a href="#beach"><img src="promo/beach package.png" alt="" class="hover-shadow" /></a>
+							<div class="cardtext"><a href="#beach">Beach Bods</a></div>
+						</div>
+					</div>
+						
+					<div class="column">
+						<div class="img-card">
+							<a href="#ig"><img src="promo/instagram package.png" alt="" class="hover-shadow" /></a>
+							<div class="cardtext"><a href="#ig">Instagram It</a></div>
+						</div>
+					</div>
+						
+				</div>
+			</div>
+		</div>
+  </section>
+	
+	<section id="bday">
+		<div class="container">
+		  <div class="col-7 left">
+				<h2>its your birthday!</h2>
+				<p>Its the special day of the year, and we will treat you with <b>30-50% off on all treatment procedures, and 10-20% off on selected products.</b> Just present your valid ID with your birthday on it!</p>
+			</div>
+			
+			<div class="col-5 left">
+				<img src="promo/birthday package.png" alt="" />
+			</div>
+		</div>
+	</section>
+	
+	<section id="bff">
+		<div class="container">
+			<div class="col-7 left">
+				<h2>bffs</h2>
+				<p>Show us a picture of you and your best friend and we will treat you with <b>Basic Facial and underarm whitening plus 10-20% off on selected products.</b></p>
+			</div>
+			
+			<div class="col-5 left">
+			  <img src="promo/bestfriends package.png" alt="" />
+			</div>
+		</div>
+	</section>
+	
+	<section id="wedding">
+		<div class="container">
+			<div class="col-7 left">
+				<h2>wedding</h2>
+			  <p>Before the big day, get yourself with our treatment:
+					<br>4 sessions of any facial Treatment
+					<br>1 session of body bleaching
+					<br>4 sessions Slim Fit Trio on 2 body parts
+			  <br>2 session Body scrub</p>
+			</div>
+			
+			<div class="col-5 left">
+				<img src="promo/wedding floral package.png" alt="" />
+			</div>
+		</div>
+	</section>
+	
+  <section id="beach">
+		<div class="container">
+			<div class="col-7 left">
+				<h2>beach</h2>
+				<p>10 sessions of Slim Fit Trio</p>
+			</div>
+			
+			<div class="col-5 left">
+				<img src="promo/beach package.png" alt="" />
+			</div>
+		</div>
+	</section>
+	
+	<section id="ig">
+		<div class="container">
+			<div class="col-7 left">
+				<h2>instagram it</h2>
+				<p>Show us an Instagram picture of our clinic or our staff and you instantly win <b>Basic Facial or Diamond Peel.</b></p>
+			</div>
+			
+			<div class="col-5 left">
+				<img src="promo/instagram package.png" alt="" />
+			</div>
+		</div>
+	</section>
+</main>
+
+<!--- footer --->
+<footer>
+<div class="container">
+	<div class="col-4 left">
+		<div id="logo"><a href="index.html">skin rx</a></div>
+		
+		<!--- book an appointment --->
+		<p><a href="contact.html#book-an-appointment" class="btn">book now</a></p><br>
+		
+		<!--- subscribe newsletter --->
+		<p><strong>Subscribe to our Newsletter</strong></p>
+		<form action="#">
+			<input type="text" name="Email" placeholder="Email address" value="" required>
+			<button type="submit" onclick="alert('You have subscribed to our newsletter.')" value="Submit">subscribe</button>
+		</form>
+	</div>
+	
+	<div class="col-4 left">
+		<h6>address</h6>
+		<p><strong>quezon</strong>
+			<br>Unit 110 K-Zone Bldg EDSA corner NIA-NPO, Brgy. Piñahan. QC
+			<br>Tel: (02) 907 2509
+			<br>Mobile: 0917 8293 540 / 0925 7336 479
+			
+			<br><strong>cotabato</strong>
+			<br>Room 108, Cotabato Polymedic & Diagnostic Center, Gov. Gutierrez Ave., Cotabato City
+			<br>Mobile: 0935 3381 062 / 0999 9956 561
+		</p>
+	</div>
+	
+	<div class="col-4 left">
+		<h6>connect</h6>
+		<div id="social">
+			<a href="http://facebook.com/skinrxfaceandbodywellness" title="facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+			<a href="http://instagram.com/skinrxfaceandbody" title="instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+			<a href="mailto:skinrx_ph@yahoo.com" title="email"><i class="far fa-envelope" aria-hidden="true"></i></a>
+		</div>
+	</div>
+	
+	<div id="copyright" class="col-12 left text-center">
+		<p>Copyright &copy; 2018 Skin RX Face and Body Wellness. All rights reserved.</p>
+	</div>
+</div>
+</footer>
+
+	
+<!--- jquery library --->
+<script src="js/jquery.min.js"></script>
+
+<!--- one page navigation --->
+<script src="js/jquery.nav.js"></script>
+
+<script>
+$('#card').onePageNav({
+	currentClass: 'current',
+	changeHash: false,
+	scrollSpeed: 2000
+});
+</script>
+
+<!--- slick nav --->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.slicknav.js"></script>
+<script type="text/javascript">
+     $(document).ready(function(){
+          $('#menu').slicknav({
+			  duration:400,
+			  brand:'SKIN RX'
+		  });
+     });
+</script>
+
+</body>
+</html>

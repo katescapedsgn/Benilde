@@ -1,0 +1,159 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+	margin:0;
+	padding:0;
+}
+
+body {
+	overflow:hidden;
+}
+
+.content {
+	width:100vw;
+	height:100vh;
+	background-color:#ffc83f;
+}
+
+.element {
+	position:absolute;
+}
+
+/*========================================
+
+		AIRCRAFTS
+
+========================================*/
+#aircraft {
+	position:absolute;
+	width:100vw;
+	z-index:99;
+}
+
+.helicopter1 {
+	top:20vh;
+	left:70vw;
+	animation:helicopter1 5s linear infinite alternate-reverse;
+}
+
+.helicopter2 {
+	top:30vh;
+	left:10vw;
+	animation:helicopter2 5s linear infinite alternate;
+}
+
+.helicopter3 {
+	top:40vh;
+	left:80vw;
+	animation:helicopter3 5s linear infinite alternate;
+}
+
+.jet1 {
+	top:55vh;
+	left:20vw;
+	animation:jet1 5s linear infinite normal;
+}
+
+.jet2 {
+	top:3vh;
+	left:20vw;
+	animation:jet2 5s linear infinite normal;
+	display:none;
+}
+
+.jet3 {
+	top:5vh;
+	left:90vw;
+	animation:jet3 10s linear infinite normal;
+}
+
+.jet1 img, .jet2 img, .jet3 img {
+	width:150px;
+}
+
+
+/*========================================
+
+		CITYSCAPE
+
+========================================*/
+#city {
+	position:absolute;
+	width:100vw;
+	height:100vh;
+	z-index:98;
+}
+
+.city1 {
+	z-index:5;
+	bottom:8vh;
+}
+
+.fog {
+	z-index:6;
+	top:0vh;
+	right:0vw;
+	animation:fog 10s linear infinite;
+}
+
+.godzilla {
+	z-index:7;
+	bottom:-18vh;
+	left:20vw;
+	animation:godzilla 10s linear infinite alternate-reverse;
+}
+
+.godzilla img {
+	height:100vh;
+}
+
+.city2 {
+	z-index:8;
+	bottom:-1vh;
+}
+
+
+/*========================================
+
+		SUNSET
+
+========================================*/
+#sunset {
+	width:100vw;
+	z-index:97;
+}
+
+.sunset {
+	z-index:1;
+	bottom:-5vh;
+}
+
+.sun {
+	height:90vh;
+	width:50vw;
+	border-radius:50%;
+	top:50%;
+	left:50%;
+	transform:translate(-50%, -50%);
+	background-color:#fee88b;
+	animation:sun 10s linear infinite;
+}
+
+
+/*========================================
+
+		TITLE
+
+========================================*/
+.title {
+	z-index:999;
+	bottom:3vh;
+	width:100%;
+	margin:0 auto;
+	text-align:center;
+}
+
+.title img {
+	height:18vh;
+}

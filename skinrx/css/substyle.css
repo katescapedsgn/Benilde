@@ -1,0 +1,96 @@
+@charset "UTF-8";
+
+/*--- general ---*/
+h2 {
+	text-align:center;
+}
+
+h5, h6 {
+	padding:10px 0;
+}
+
+h5 {
+	text-align:center;
+	border-bottom:2px solid #da6d7c;
+	margin-top:100px;
+}
+
+h6 { letter-spacing:1px; }
+
+blockquote {
+	border-left:1px solid #da6d7c;
+	padding-left:15px;
+}
+
+a.active, a:hover { color: #da6d7c; }
+
+/*--- service navigation ---*/
+#servicemenu {
+	padding: 25px 0 100px;
+}
+
+#servicemenu .button a {
+	margin: .4rem .8rem;
+	color: #000;
+	border: 1px solid #000;
+	border-radius: 3px;
+}
+
+#servicemenu .button a:hover {
+	background:#ec63a0;
+	color: #fff;
+	border: 1px solid #ec63a0;
+}
+
+/*--- subservice ---*/
+.maintitle {
+	background-color: #fdeff5;
+	color: #da6d7c;
+	text-align: center;
+	padding: 0;
+}
+
+/*--- menu ---*/
+.menutitle {
+	background: #fbfbfb;
+	margin: 20px 0;
+	padding: 10px;
+	border-bottom: 1px solid #ec63a0;
+	cursor: pointer;
+	vertical-align: middle;
+}
+
+.lnr {
+	margin-right: 10px;
+	height: 100px;
+	box-sizing: border-box;
+}
+
+.desc {
+	background: #fdeff5;
+	padding: 20px;
+}
+
+.type {
+	width: 80%;
+	text-align: left;
+	display: inline-block;
+}
+
+.total {
+	margin: 22px 0;
+	padding:13px 0;
+	color: #da6d7c;
+	font-weight: 700;
+	height: 22px;
+	line-height: 22px;
+	float: right;
+	position: relative;
+	display:inline-block;
+}
+
+.booknow {
+	padding: 5% 0;
+	margin: 0 auto;
+	text-align: center;
+}

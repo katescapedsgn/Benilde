@@ -1,0 +1,483 @@
+@charset "utf-8";
+/*--- tooltips ---*/
+#s-m-t-tooltip {
+	color:#333;
+	background-color:#fff;
+	font-size:10px;
+	font-family:'Open Sans', helvetica, sans-serif;
+	letter-spacing:1px;
+	text-transform:uppercase;
+	text-align:center;
+	position:absolute;
+	padding:3px 5px;
+	margin-top:30px;
+	border:1px solid #eee;
+	z-index:9999;
+}
+
+/*--- selection ---*/
+::-moz-selection{ background:#eee; color:#222; }
+::selection { background:#eee; color:#222; }
+ 
+/*--- scrollbar ---*/
+::-webkit-scrollbar {
+    width:7px;
+    background:#fff;
+}
+
+::-webkit-scrollbar-thumb {  
+    background-color:#f96854; /* scrollbar colour */
+}
+
+::-webkit-scrollbar-track {
+	background-color:#052d49; /* scrollbar colour */
+}
+
+/*--- general ---*/
+body {
+	background-color:#f8f8f8;
+	background-size:cover;
+	margin:0;
+	padding:0;
+	font-family:'Montserrat', sans-serif;
+	font-size:16px;
+	overflow-x:hidden;
+}
+
+h1 {
+	font-family:'Open Sans', helvetica, sans-serif;
+	font-size:24px;
+	font-weight:700;
+	margin:50px 0px 20px;
+	text-transform:uppercase;
+	text-align:center;
+	letter-spacing:2px;
+}
+
+h2 {
+	font-family:'Open Sans', helvetica, sans-serif;
+	font-size:22px;
+	font-weight:700;
+	margin:50px 0px 20px;
+	text-transform:uppercase;
+	text-align:center;
+	letter-spacing:2px;
+	border-bottom:1px solid #f96854;
+}
+
+h3 {
+	font-family:'Open Sans', helvetica, sans-serif;
+	font-size:20px;
+	font-weight:700;
+	margin:50px 0px 20px;
+	text-transform:uppercase;
+	text-align:center;
+	letter-spacing:2px;
+}
+
+h4 {
+	font-size:18px;
+	font-weight:700;
+	margin:20px 0px;
+	padding:10px 0px;
+	letter-spacing:1px;
+	text-transform:uppercase;
+	border-bottom:1px solid #f96854;
+}
+
+h6 {
+	font-size:18px;
+	font-weight:700;
+	margin:20px 0px;
+	padding:10px 0px;
+	letter-spacing:1px;
+	text-transform:uppercase;
+	color:#f96854;
+	border-bottom:1px solid #f96854;
+}
+
+b, strong {
+	letter-spacing:2px;
+}
+i, em { font-style:italic; }
+
+p {
+	text-align:left;
+}
+
+blockquote {
+    padding-left:10px;
+    margin:0;
+	border-left:1px solid #f96854;
+}
+
+img {
+	display: block;
+	margin:0px auto;
+}
+
+a {
+	text-decoration:none;
+	color:#052d49; /* links colour */
+}
+
+a.active { color:#f96854; }
+
+a:hover {
+	color:#f96854; /* links hover colour */
+	cursor:pointer;
+}
+
+/*--- header ---*/
+#header {
+	width:100vw;
+	height:calc(100vh - 70px);
+	background-image:url('../images/beach aerial by egzon bytyqi large.jpg');
+	background-repeat:no-repeat;
+	background-position:center;
+	background-attachment:relative;
+	display:block;
+	position:relative;
+	z-index:999!important;
+	top:0;
+	text-align:center;
+	color:#fff;
+	text-shadow: 4px 7px 4px rgba(0,0,0,0.5);
+}
+
+	/*-- horizontal and vertical align --*/
+.htxt {
+	margin:0;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%, -50%);
+}
+
+.htitle {
+	font-family:'Playfair Display', times, serif;
+    font-style:italic;
+    font-size:6em;
+	font-weight:700;
+	letter-spacing:1px;
+}
+
+.hsubtitle {
+	font-size:2em;
+	font-weight:700;
+	letter-spacing:1px;
+}
+
+/*--- navigation ---*/
+#navi {
+    position:relative;
+    width:100vw;
+    height:70px;
+    background:#fff;
+    border:1px solid #eee;
+    z-index:9999!important;
+}
+
+.icon {
+    float:left;
+    padding:14px 20px;
+}
+
+.icon img {
+    width:40px;
+    height:40px;
+}
+
+.title {
+    font-family:'Playfair Display', times, serif;
+    font-style:italic;
+    font-size:20px;
+	font-weight:600;
+    position:relative;
+    margin-top:20px;
+    margin-left:70px;
+	width:500px;
+	letter-spacing:1px;
+    line-height:30px;
+    color:#222;
+}
+
+#nav {
+    position:relative;
+    float:right;
+    margin-right:15px;
+    margin-top:-20px;
+    text-align:right;
+    text-transform:uppercase;
+	font-weight:bold;
+}
+
+#nav ul {
+	list-style:none;
+	margin:-10px 0px;
+}
+
+#nav li {
+	float:left;
+	display:inline-flex;
+}
+
+#nav li a {
+	margin:10px;
+	color:#052d49;
+	text-decoration:none;
+}
+
+#nav li a:empty {
+	display:none;
+}
+
+#nav li a.active {
+	color:#f96854;
+}
+
+#nav li a:hover {
+	color:#f96854;
+	border-bottom:1px solid #f96854;
+}
+
+/*--- content ---*/
+main {
+	margin:0 auto;
+	width:100vw;
+}
+
+.container {
+	width:90%;
+	margin:0 auto;
+	padding:5%;
+	overflow:hidden;
+}
+
+/*--- HOME PAGE ---*/
+#about {
+	background:#052d49;
+	color:#fff;
+}
+
+#what-we-do {
+	color:#052d49;
+}
+
+#slideshow {
+	max-width:100%;
+}
+
+#slideshow img {
+	width:100%;
+}
+
+/*--- ABOUT PAGE ---*/
+#aboutheader {
+	width:100vw;
+	padding:20px;
+	background:url('../images/underwater pink jellyfish.jpg') no-repeat center;
+	background-attachment:relative;
+	background-size:cover;
+	text-align:center;
+	color:#fff;
+}
+
+.aht {
+	font-family:'Open Sans', helvetica, sans-serif;
+	font-size:4em;
+	font-weight:700;
+	letter-spacing:2px;
+	text-transform:uppercase;
+}
+
+.ahst {
+	font-size:2em;
+	font-weight:700;
+	letter-spacing:1px;
+}
+
+#about-us {
+	color:#052d49;
+}
+
+#problem {
+	width:100vw;
+	height:100vh;
+	background:url('../images/whatwedo_oceana.jpg') no-repeat center;
+	background-size:cover;
+	background-attachment:relative;
+	color:#fff;
+}
+
+#problem img { width:300px; }
+
+/*--- GALLERY PAGE ---*/
+#exploreheader {
+	width:100vw;
+	padding:20px;
+	background:url('../images/corals by Scott Webb.jpg') no-repeat center;
+	background-attachment:relative;
+	background-size:cover;
+	text-align:center;
+	color:#fff;
+}
+
+#explore {
+	color:#052d49;
+}
+
+#album {
+	margin:0 auto;
+	width:calc((300px + 50px + 2px) * 4);
+	/* ((image width + 2*margin + 2*border width) * number of columns) */
+}
+
+#album .box {
+	position:block;
+	margin:50px 20px 50px;
+	width:300px; /* image width */
+	float:left;
+	background:#fff;
+}
+
+#album .box img {
+	position:relative;
+	width:300px; /* image width */
+}
+ 
+#album .box h1 {
+	position:relative;
+	text-transform:uppercase;
+	text-align:center;
+	font-weight:600;
+	font-size:14px;
+}
+
+/*--- SUPPORT PAGE ---*/
+#supportheader {
+	width:100vw;
+	padding:20px;
+	background:url('../images/shoal of sharks by Luis Vidal.jpg') no-repeat center;
+	background-attachment:relative;
+	background-size:cover;
+	text-align:center;
+	color:#fff;
+}
+
+#support {
+	color:#052d49;
+}
+
+#act {
+	background:#052d49;
+	color:#fff;
+	text-align:center;
+}
+
+/*--- form ---*/
+form {
+	padding-left:10px;
+}
+
+textarea {
+	width:95%;
+	height:70px;
+	border-radius:3px;
+	font-family:'Montserrat', sans-serif;
+	font-weight:500;
+	background-color:#fff;
+	margin:0px 10px;
+	padding:5px;
+	border:none;
+	margin-bottom:10px;
+}
+
+input {
+	width:250px;
+	height:20px;
+	border-radius:3px;
+	background-color:#fff;
+	font-family:'Montserrat', sans-serif;
+	font-weight:500;
+	margin:0px 10px 15px;
+	padding:5px;
+	border:none;
+}
+
+button {
+	border-radius:1px;
+	background-color:#f96854;
+	font-family:'Montserrat', sans-serif;
+	font-size:16px;
+	font-weight:600;
+	margin:0px 10px;
+	padding:10px 30px;
+	border:none;
+	display:inline-block;
+	letter-spacing:3px;
+	text-transform:uppercase;
+}
+
+button:hover { font-weight:600; }
+
+/*--- CONTACT PAGE ---*/
+#contactheader {
+	width:100vw;
+	padding:20px;
+	background:url('../images/Fish near the sea bottom by Johnny Chen.jpg') no-repeat center;
+	background-attachment:relative;
+	background-size:cover;
+	text-align:center;
+	color:#fff;
+}
+
+#contact {
+	background:#052d49;
+	color:#fff;
+}
+
+.contactbox {
+	margin-left:20px;
+	background-color:#ececec;
+	border:none;
+	padding:25px;
+	border-radius:1px;
+	opacity:1.0;
+}
+
+.contactinfo {
+	padding:0px 50px;
+}
+
+/*--- social media ---*/
+#social {
+    position:relative;
+	margin:0 auto;
+	padding:5px 40px 5px 40px;
+    text-align:center;
+}
+
+#social i {
+    font-size:16px;
+	width:20px;
+	padding:7px;
+    margin:2px;
+	background:#fafafa;
+	border-bottom:1px solid #eee;
+}
+
+#social i:hover { background:#fff; }
+
+/*--- footer ---*/
+footer {
+	width:100vw;
+	bottom:0;
+	background:#042841;
+	color:#fff;
+	padding:20px;
+	text-align:center;
+	font-size:12px;
+	font-weight:500;
+	letter-spacing:.5px;
+}

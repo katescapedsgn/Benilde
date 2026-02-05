@@ -1,0 +1,44 @@
+@charset "utf-8";
+/*--- DO NOT TOUCH ---*/
+img {
+	max-width:100%;
+}
+
+.slicknav_menu {
+	display:none;
+}
+
+[class*='col-'] {
+	padding:0 1.5%;
+	box-sizing:border-box;
+}
+/*--- DO NOT TOUCH ---*/
+
+/*--- small desktop screens ---*/
+@media all and (max-width: 1199px) {
+	
+}
+
+/*--- tablet landscapes ---*/
+@media all and (max-width: 1024px) {
+	
+}
+
+/*--- tablet portrait ---*/
+@media all and (max-width: 768px) {
+/*--- DO NOT TOUCH ---*/
+	[class*='col-'] {
+		width:100%;
+	}
+
+	.js #menu {
+		display:none;
+	}
+/*--- DO NOT TOUCH ---*/
+
+}
+
+/*--- small mobile devices ---*/
+@media all and (max-width: 575px) {
+	
+}

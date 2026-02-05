@@ -1,0 +1,176 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin:0;
+	padding:0;
+}
+
+body {
+	font-family: 'Source Sans Pro', helvetica, sans-serif;
+	background:#000;
+	color:#fff;
+}
+
+/*--- typography ---*/
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Open Sans', helvetica, sans-serif;
+	font-weight:700;
+	text-transform:uppercase;
+}
+
+#title h1, h2 {
+	font-weight:800;
+}
+
+#title h1 {
+	font-size:200px;
+	letter-spacing:10px;
+}
+
+#title h2 {
+	font-size:45px;
+	letter-spacing:3px;
+	text-shadow:1px 1px 2px rgba(0,0,0,.5);
+}
+
+#synopsis h1 {
+	letter-spacing:2px;
+}
+
+p {
+	font-weight:400;
+	line-height:2;
+	margin:20px 0;
+}
+strong { text-transform:uppercase; }
+
+a {
+	text-decoration:none;
+	text-transform:uppercase;
+	color:#fff;
+	letter-spacing:2px;
+}
+
+/*--- general ---*/
+.container {
+	width:100%;
+	margin:0 auto;
+	overflow:hidden;
+}
+
+/*--- navigation ---*/
+nav {
+	width:100%;
+	height:80px;
+	background:rgba(112, 66, 20, .5); /*-- #704214 / Sepia --*/
+	text-align:center;
+	position:fixed;
+	z-index:9999;
+}
+
+nav ul {
+	list-style:none;
+}
+
+nav li {
+	display:inline-block;
+}
+
+nav a {
+	display:block;
+	height:80px;
+	line-height:80px;
+	padding:0 20px;
+	transition:all .4s ease-in-out;
+}
+
+nav a:hover {
+	background:rgba(112, 66, 20, .5);
+}
+
+/*--- home page ---*/
+body.home {
+	background:url('../images/header.jpg') #000 no-repeat center;
+	background-size:cover;
+	background-attachment:fixed;
+}
+
+#title {
+	text-align:center;
+	box-sizing:border-box;
+	min-height:70vh;
+	padding: 15vh 0 10vh;
+}
+
+#logo {
+	margin-bottom:30px;
+}
+
+.button {
+	padding:20px 0;
+}
+
+.button a {
+	display:inline-block;
+	padding:20px;
+	background:rgba(112, 66, 20, .5);
+	border:1px solid #fff;
+}
+
+.button a:hover {
+	background:#704214;
+	transition:all .4s ease-in-out;
+}
+
+#studios img {
+	width:100px;
+	display:inline-block;
+	vertical-align:middle;
+	padding:0 20px;
+}
+
+/*--- video bg ---*/
+#video-bg {
+	position:fixed;
+	z-index:-1;
+	min-height:100%;
+	min-width:100%;
+	top:0;
+	object-fit:cover;
+}
+
+/*--- synopsis page ---*/
+body.synopsis {
+	background:url('../images/bg2.png') #000 no-repeat center;
+	background-size:cover;
+	background-attachment:fixed;
+}
+
+#synopsis {
+	padding:20vh;
+	min-height:70vh;
+	box-sizing:border-box;
+}
+
+.content {
+	background-color:rgba(0, 0, 0, .5);
+	padding: 30px;
+	border-radius:2px;
+}
+
+/*--- footer ---*/
+footer {
+	text-align:center;
+}
+
+#copyright {
+	color:#fff;
+	padding:20px;
+	text-transform:uppercase;
+}
+
+/*--- featherlight ---*/
+#trailer-wrapper {
+	display:none;
+}
+

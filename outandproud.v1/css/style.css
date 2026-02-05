@@ -1,0 +1,134 @@
+@charset "utf-8";
+/*--- scrollbar ---*/
+::-webkit-scrollbar {
+    width:4px;
+    height:7px;
+    background:#fff;
+}
+
+::-webkit-scrollbar-thumb {  
+    background-color:#8f5fb0; /* scrollbar colour */
+}
+
+::-webkit-scrollbar-track {
+	background-color:#eee; /* scrollbar colour */
+}
+
+/*--- general ---*/
+body{
+    margin:0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*-- typography ---*/
+h1{
+    font-size:60px;
+    margin:0;
+}
+
+h2{
+    font-size:30px;
+    margin:0;
+}
+
+h3{
+    font-size:20px;
+    margin:0;
+}
+
+p{
+    font-size:16px;
+}
+
+small{font-size:13px}
+
+/*--- general ---*/
+section{
+    padding:80px 0;
+}
+
+.container{
+    width:80%;
+    margin:0 auto;
+    overflow:hidden;
+}
+
+[class*="col-"] {
+	float:left;
+	padding:0 20px;
+	box-sizing:border-box;
+}
+
+/*--- header ---*/
+header{
+    background:url(../images/rainbow_lines.png) #000 repeat-x;
+}
+
+#logo{
+    padding:30px 0 20px;
+}
+
+/*--- navigation ---*/
+nav ul{
+    float:right;
+}
+
+nav li{
+    display:inline-block;
+    padding:20px 0 15px 25px;
+}
+
+nav a{
+    color:#fff;
+    text-decoration:none;
+    font-weight:700;
+    letter-spacing:2px;
+    text-transform:uppercase;
+}
+
+/*--- featured ---*/
+#featured{
+    background:url('../images/featured_bg.jpg') no-repeat center;
+    background-size:cover;
+    color:#fff;
+    text-align:right;
+    padding:120px 0;
+}
+
+.button{
+    margin-top:20px;
+}
+
+.button a{
+    background:#fec615;
+    padding:15px 20px;
+    display:inline-block;
+    text-transform:uppercase;
+    text-decoration:none;
+    font-weight:700;
+    color:#fff;
+    letter-spacing:1px;
+    border-radius:5px;
+}
+
+/*--- join us ---*/
+#join-us{
+    background:#fafafa;
+}
+
+/*--- why join ---*/
+#why-join{
+    text-align:center;
+}
+
+#why-join h2{
+    padding-bottom:30px;
+}
+
+/*--- footer ---*/
+footer{
+    background:#000;
+    padding:20px 0;
+    text-align:center;
+    color:#fff;
+}

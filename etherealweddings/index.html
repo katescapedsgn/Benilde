@@ -1,0 +1,180 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Ethereal Weddings</title>
+<link rel="shortcut icon" href="logo/parantica-sita-butterfly.png">
+
+<!--- responsive meta tag --->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!--- stylesheets --->
+<link rel="stylesheet" href="css/slicknav.css">
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/grid.css">
+
+<link rel="stylesheet" href="css/responsive.css">
+
+<!--- fonts --->
+<link href="https://fonts.googleapis.com/css?family=Tangerine:700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400i,700i" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+<!--- icons --->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!---  style my tooltips script --->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="http://static.tumblr.com/rzl30kg/eAxm7a751/jquery.style-my-tooltips.js"></script>
+
+<script type="text/javascript">
+	(function($){
+		$(document).ready(function(){
+			$("[title]").style_my_tooltips({
+				tip_follows_cursor:true,
+				tip_delay_time:200,
+				tip_fade_speed:300
+           });
+		});
+	})(jQuery);
+</script>
+
+</head>
+
+<body>
+
+<!--- header --->
+<header>
+	<div class="container">
+		<div id="title" class="col-5 left">
+			<img src="logo/wedding-rings.png" alt="" />
+			<a href="index.html">Ethereal Weddings</a>
+		</div>
+		
+		<!--- navigation --->
+		<nav class="col-7 left">
+			<ul id="menu">
+				<li><a href="index.html" class="active">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="services.html">Services</a></li>
+				<li><a href="gallery.html">Gallery</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+	</div>
+</header>
+
+<main>
+	<!--- featured --->
+	<div id="featured">
+		<div class="container">
+			<div class="htxt">
+				<h1>Ethereal Weddings</h1>
+				<h3>Bespoke Wedding Planners</h3>
+			</div>
+		</div>
+	</div>
+	
+	<!--- about --->
+ 	<section id="a">
+		<div class="container">
+			<article class="col-5 left">
+				<h2><big>A</big>bout</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque magnam velit eum rerum laborum? Natus perspiciatis quas cupiditate vero provident dignissimos, unde. Molestias neque, consequuntur sequi repellat! Enim voluptates, dolores!</p>
+				
+				<p><a href="about.html" class="btn">learn more</a></p>
+				
+			</article>
+			
+			<article class="col-7 left">
+				<div id="slideshow">
+					<img class="carousel" src="images/slicing wedding cake.jpg" alt="" />
+					<img class="carousel" src="images/honeymoon car.jpg" alt="" />
+					<img class="carousel" src="images/couple forest.jpg" alt="" />
+					<img class="carousel" src="images/bride walking in sand centre.png" alt="" />
+					<img class="carousel" src="images/tying the knot.jpeg" alt="" />
+					<img class="carousel" src="images/hair ribbon bride centre.png" alt="" />
+				</div>
+			</article>
+		</div>
+	</section>
+	
+	<!--- gallery --->
+	<section id="b">
+		<div class="container">
+			<article class="col-7 left">
+				<img src="images/flower church aisle.jpg" alt="" />
+			</article>
+			
+			<article class="col-5 left">
+			  <h2><big>G</big>allery</h2>
+			  <p>In hac habitasse platea dictumst. Praesent venenatis eu purus quis feugiat. Nulla viverra cursus sagittis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque elementum tellus nec magna ultricies molestie.</p>
+				
+				<p><a href="gallery.html" class="btn">view photos</a></p>
+			</article>
+		</div>
+	</section>
+	
+	<!--- services --->
+	<section id="c">
+		<div class="container">
+			<article class="col-5 left">
+				<h2><big>S</big>ervices</h2>
+				<p>Sed elementum, odio in ornare accumsan, turpis massa mollis magna, eu iaculis lectus lectus sed lacus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque mauris diam, interdum id suscipit sit amet, dapibus eget ex.</p>
+				
+				<p><a href="services.html" class="btn">view packages</a></p>
+			</article>
+			
+			<article class="col-7 left">
+				<img src="images/3.jpg" alt="" />
+			</article>
+		</div>
+	</section>
+
+</main>
+
+<!--- footer --->
+<footer>
+	<div id="social">
+		<a href="http://facebook.com" title="facebook"><i class="fa fa-facebook-f" aria-hidden="true"></i></a>
+		<a href="http://twitter.com" title="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+		<a href="http://instagram.com" title="instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+		<a href="http://google.com" title="google plus"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+	</div>
+	
+	<br>&copy; Copyright 2018. Ethereal Weddings. All rights reserved. For educational purposes only.
+</footer>
+
+<!--- carousel slideshow --->
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+	var i;
+	var x = document.getElementsByClassName("carousel");
+	for (i = 0; i < x.length; i++) {
+		x[i].style.display = "none";
+	}
+	myIndex++;
+	if (myIndex > x.length) {myIndex = 1}
+	x[myIndex-1].style.display = "block";
+	setTimeout(carousel, 3000) //change image every x seconds
+}
+</script>
+
+<!--- slick nav --->
+<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script type="text/javascript" src="css/jquery.slicknav.js"></script>
+<script type="text/javascript">
+     $(document).ready(function(){
+          $('#menu').slicknav(); 
+     }); 
+</script>
+
+</body>
+</html>

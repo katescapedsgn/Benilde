@@ -1,0 +1,113 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	font-family:'Open Sans', helvetica, sans-serif;
+	line-height:180%;
+	color: #000;
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	font-family: 'Playfair Display', times, serif;
+	font-style: italic;
+	font-weight: 700;
+}
+
+h2 {
+	text-align: center;
+	text-transform: uppercase;
+}
+
+h3 {
+	font-weight: normal;
+}
+
+main#content {
+	width: 90%;
+	margin: 0 5%;
+}
+
+/*--- VIDEO BG 
+#video-bg {
+	position: fixed;
+	z-index: -1;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	object-fit: cover;
+}
+---*/
+
+/*--- FEATURED ---*/
+#featured {
+	width: 100%;
+	height: 40vh;
+	background: url('../videos/az fell bw.jpg') no-repeat center;
+	background-attachment: relative;
+	background-size: cover;
+}
+
+/*--- TITLE ---*/
+#title {
+	text-align: center;
+	font-weight: 700;
+}
+
+.welcome {
+	margin-top: 5%;
+}
+
+.desc {
+	margin-bottom: 3%;
+}
+
+.container {
+	width: 90%;
+	margin: 0 5%;
+}
+
+form {
+	border: 1px solid #aaa;
+	width: 90%;
+	margin: 5% 5%;
+	padding: 5% 0 10% 0;
+	border-radius: 5px;
+}
+
+.formcont {
+	width: 50%;
+	margin: 0 25%;
+}
+
+input[type=text] {
+	width: 100%;
+	font-family: 'Open Sans', helvetica, sans-serif;
+	background: none;
+	border-radius: 2px;
+	border: 1px solid #aaa;
+	padding: 5px;
+	margin: 3% 0;
+}
+
+input[type=submit] {
+	background: #decba4;
+	font-family: 'Open Sans', helvetica, sans-serif;
+	padding: 8px 20px;
+	border: none;
+	border-radius: 2px;
+	cursor: pointer;
+}
+
+select {
+	width: 100%;
+	font-family: 'Open Sans', helvetica, sans-serif;
+	background: none;
+	border: 1px solid #aaa;
+	border-radius: 2px;
+	padding: 5px;
+	margin: 3% 0;
+}
+

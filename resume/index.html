@@ -1,0 +1,342 @@
+<!doctype html>
+<html>
+<head>
+
+<!--
+
+==============================================
+
+
+           「  CODES BY POHRORO  」
+                @ pohroro.com
+            Page ▸ Vino (Revamped)
+          v1.3.0 | Updated: 30/12/17
+
+
+============================================== 
+
+-->
+
+<meta charset="utf-8">
+<title>kate</title>
+<link rel="shortcut icon" href="http://i.imgur.com/Q3yAzoY.png">
+
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
+<link href="https://fonts.googleapis.com/css?family=Allura" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- scripts - DO NOT TOUCH -->
+ 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+ 
+<script src="http://static.tumblr.com/rzl30kg/eAxm7a751/jquery.style-my-tooltips.js"></script>
+<script type="text/javascript">
+	(function($){
+		$(document).ready(function(){
+			$("[title]").style_my_tooltips({
+				tip_follows_cursor:true,
+				tip_delay_time:200,
+				tip_fade_speed:300
+           });
+		});
+	})(jQuery);
+</script>
+
+<style type="text/css">
+/*--- selection ---*/
+::-moz-selection{ background:#eee; color:#222; }
+::selection { background:#eee; color:#222; }
+ 
+/*--- scrollbar ---*/
+::-webkit-scrollbar {
+    width:7px;
+    height:7px;
+    background:#fff;
+}
+
+::-webkit-scrollbar-thumb {  
+    background-color:#b392c9; /* scrollbar colour */
+	border:2px solid #fff;
+}
+
+::-webkit-scrollbar-track {
+	background-color:#eee; /* scrollbar colour */
+	border:2px solid #fff;
+}
+ 
+/*--- tooltips ---*/
+#s-m-t-tooltip {
+	color:#666;
+	background-color:#fafafa;
+	font-size:10px;
+	font-family:'Open Sans', helvetica, sans-serif;
+	letter-spacing:1px;
+	text-transform:uppercase;
+	text-align:center;
+	position:absolute;
+	padding:0px 5px 0px 5px;
+	margin-top:30px;
+	border:1px solid #eee;
+	z-index:9999;
+}
+
+/*-- content --*/
+body {
+	color:#444; /*--- text colour ---*/
+    background-color:#fff; /*--- background colour ---*/
+    font-style:normal;
+    font-family:'Montserrat', sans-serif;
+    font-size:12px;
+    font-weight:400;
+    text-decoration:none;
+    line-height:180%;
+    height:100vh;
+}
+
+h3 {
+	color:#000;
+	font-size:16px;
+	text-transform:uppercase;
+	font-weight:bold;
+	letter-spacing:4px;
+	padding:10px;
+	border-bottom:1px solid #b392c9;
+	margin-top:50px;
+}
+
+b, strong {
+	text-transform:uppercase;
+	letter-spacing:2px;
+}
+i, em { font-style:italic; }
+ 
+blockquote {
+    padding-left:10px;
+    margin:0;
+    border-left:1px solid #eee;
+}
+	
+a {
+	text-decoration:none;
+	color:#444; /* links colour */
+}
+
+a:hover {
+	color:#b392c9; /* links hover colour */
+	cursor:pointer;
+}
+	
+#top {
+	background:#000;
+    height:140px;
+    width:100%;
+    position:absolute;
+    left:0;
+    top:0;
+    z-index: 2;
+}
+
+#container {
+    width:730px;
+    margin:0 auto;
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+}
+
+#sidebar {
+    position:absolute;
+    z-index:2;
+}
+
+#sidebar img {
+	border-color:#fff;
+	background:#f6f6f6;
+	border-radius:3px;
+    position:absolute;
+    height: auto;
+    width:200px;
+    margin:30px 0px 0px 0px;
+    padding:3px;
+}
+
+/*--- list ---*/
+#col1 {
+	position:absolute;
+	margin:220px 0px 200px 0px;
+}
+.box {
+	width:200px;
+	margin:0px;
+}
+
+.box h1 {
+	color:#000;
+	font-size:14px;
+	font-weight:600;
+	text-transform:uppercase;
+	text-align:center;
+	letter-spacing:4px;
+	padding:10px;
+	border-bottom:1px solid #b392c9;
+	margin-top:50px;
+}
+
+.box h2 {
+	font-weight:400;
+	font-size:11px;
+	padding-left:15px;
+	color:#000;
+}
+
+.list {
+    margin-top:5px;
+    border-bottom:1px solid #eee;
+}
+
+/*--- bio ---*/
+#content {
+    margin: 210px 0 0 280px;
+}
+
+#title {
+    color:#000;
+    font-size:70px;
+    line-height:60px;
+    margin-bottom:50px;
+    font-family:'Allura', cursive;
+}
+
+#bio{
+	width:480px;
+    text-align:justify;
+    margin:50px 0 40px;
+}
+
+/*-- social --*/
+#social {
+    text-align:center;
+}
+ 
+#social i {
+    font-size:16px;
+    padding:7px;
+    margin:2px;
+}
+ 
+#social i:hover { background:#fff; } /* colour on hover */
+
+/*-- adobe --*/
+ul#adobe {
+	width:50px;
+	height:50px;
+	position:absolute;
+	display:table;
+	width:90%;
+	margin:5px;
+}
+ul#adobe li {
+	list-style:none;
+	float:left;
+	margin:0px 25px;
+	padding:1px;
+	display:table-cell;
+	width:25px;
+}
+ul#adobe li img {
+	width:100%;
+	max-width:50px;
+}
+</style>
+</head>
+
+<body>
+<div id="top"></div>
+<div id="container">
+
+<div id="sidebar">
+<img src="http://i.imgur.com/Q3yAzoY.png"> <!-- sidebar image -->
+</div>
+
+<div id="col1">
+<!--- box one start --->
+<div class="box">
+	<h1>skills</h1>
+<div class="list">
+	<h2>Graphic Artist</h2>
+	<h2>Photographer</h2>
+	<h2>Writer</h2>
+	<h2>Illustrator</h2>
+	<h2>Branding</h2>
+	<h2>Marketing</h2>
+	<h2>Copywriting</h2>
+	<h2>Web content development</h2>
+</div>
+</div>
+<!--- box one end --->
+
+<!--- box two start --->
+<div class="box">
+	<h1>personality</h1>
+<div class="list">
+	<h2>Creative spirit</h2>
+	<h2>Reliable</h2>
+	<h2>Organized</h2>
+	<h2>Motivated</h2>
+	<h2>Introverted Extrovert</h2>
+	<h2>Spontaneous</h2>
+	<h2>Fast learner</h2>
+</div>
+</div>
+<!--- box two end --->
+<div id="social">
+<h3>social</h3>
+<a href="https://www.facebook.com/cathrynnafable" title="facebook">
+	<i class="fa fa-facebook-f"></i></a>
+<a href="https://www.instagram.com/kateafable/" title="instagram">
+	<i class="fa fa-instagram" aria-hidden="true"></i></a>
+<a href="http://pemberley.co.vu/" title="tumblr">
+	<i class="fa fa-tumblr"></i></a>
+<a href="https://www.goodreads.com/user/show/66645062-cathrynn" title="goodreads">
+	<i class="fa fa-book"></i></a>
+<a href="https://www.pinterest.com/astaraeus/" title="pinterest">
+	<i class="fa fa-pinterest-p"></i></a>
+	<a href="http://vsco.co/profilerrynn/" title="vsco"><i class="fa fa-empire"></i></a>
+</div>
+</div>
+
+<div id="content">
+<div id="title">Kate Tacastacas</div>
+
+<div id="bio">
+<h3>about</h3>
+<p>I am currently a university student in the field of multimedia arts where I can apply my knowledge and skills for continuous improvement. I enjoy travelling and having outdoor adventures. I like reading books and watching films.</p>
+
+<h3>education</h3>
+<b>de la salle college of saint benilde</b>
+<br>Bachelor of Arts in Multimedia Arts | 2015 - Present
+
+<p><b>university of santo tomas</b>
+<br>Bachelor of Science in Biochemistry | 2014</p>
+
+<p><b>st. scholastica's college, manila</b>
+<br>High School | 2010-2014
+<br>Grade School | 2003-2010</p>
+
+<h3>programs</h3>
+	<ul id="adobe">
+		<li><img src="https://i.imgur.com/42xfFiy.png" title="photoshop"></li>
+		<li><img src="https://i.imgur.com/80D6pxG.png" title="illustrator"></li>
+		<li><img src="https://i.imgur.com/0hCPqOs.png" title="indesign"></li>
+		<li><img src="https://i.imgur.com/NjKhW2w.png" title="premiere"></li>
+		<li><img src="https://i.imgur.com/j2w5GyS.png" title="dreamweaver"></li>
+	</ul>
+</div>
+
+</div>
+</div>
+</body>
+</html>
