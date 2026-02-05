@@ -1,4 +1,4 @@
-name: main
+name: Directory Listing
 on: [push]
 
 jobs:
@@ -14,15 +14,14 @@ jobs:
           ref: dummy-data
 
       - name: Generate Directory Listings
-        uses: jayanta525/github-pages-directory-listing@v4.0.0
+        uses: jayanta525/github-pages-directory-listing@main
         with:
-          FOLDER: data
+          FOLDER: data      #directory to generate index
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3.0.1
         with:
-          # Upload generator folder
-          path: 'data'
+          path: 'data'      # upload generated folder
 
   deploy:
     needs: pages-directory-listing
