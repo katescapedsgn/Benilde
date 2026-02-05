@@ -1,0 +1,147 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Adventure in Space</title>
+
+<!--- fonts --->
+<link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono" rel="stylesheet">
+
+<!--- stylesheets --->
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/grid.css">
+
+<!--- animate css --->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+</head>
+
+<body data-enllax-ratio="0.75">
+	<!--- navigation --->
+	<nav>
+		<ul>
+			<li class="current"><a href="#one">1</a></li>
+			<li><a href="#two">2</a></li>
+			<li><a href="#three">3</a></li>
+			<li><a href="#four">4</a></li>
+		</ul>
+	</nav>
+	
+	<!--- main --->
+	<main>
+		<!--- first section --->
+		<section id="one">
+			<div class="container">
+				<div class="col-12 bounceInDown" id="logo">
+					<img src="images/logo.png" alt="" />
+				</div>
+			</div>
+			
+			
+			<!---- HOW TO CUSTOMISE YOUR ELEMENTS
+			TEMPLATE FOR NEW ELEMENTS:
+			<div class="element" id="element-1"><img src="#" alt="" /></div>
+			<div class="element" id="element-2"><img src="#" alt="" /></div>
+			<div class="element" id="element-3"><img src="#" alt="" /></div>
+			<div class="element" id="element-4"><img src="#" alt="" /></div>
+			
+			POSITION ELEMENT IN CSS FILE:
+			#element-1 {
+    			top:10vh;
+    			left:10vw;
+			}
+			
+			ADD ENLLAX CODE IF YOU HAVE POSITIONED YOUR ELEMENT:
+			CHECK https://github.com/mmkjony/enllax.js for instructions!
+			
+			<div class="element" id="element-1" data-enllax-ratio=".5" data-enllax-type="foreground" data-enllax-direction="horizontal">
+				<img src="#" alt="" />
+			</div>
+			---->
+			
+			
+			<div class="element" id="element-1" data-enllax-ratio="-0.5" data-enllax-type="foreground" data-enllax-direction="horizontal">
+				<img src="images/artificial-gravity-modulo.png" alt="" />
+			</div>
+			
+			<div class="element" id="element-2"></div>
+		</section>
+		
+		<!--- second section --->
+		<section id="two">
+			<div class="container">
+				<div class="col-12 text">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae asperiores ipsa cupiditate, tempora voluptatum ullam, numquam quibusdam repellendus! Porro tempore, id recusandae dignissimos excepturi consequuntur voluptates possimus voluptatum totam delectus!</p>
+				</div>
+			</div>
+			
+			<div class="element" id="element-3" data-enllax-ratio="-1.5" data-enllax-type="foreground" data-enllax-direction="horizontal">
+				<img src="images/satellite-2.png" alt="" />
+			</div>
+			
+			<div class="element" id="element-4" data-enllax-ratio="-0.5" data-enllax-type="foreground">
+				<img src="images/mercury.png" alt="" />
+			</div>
+		</section>
+		
+		<!--- third section --->
+		<section id="three">
+			<div class="container">
+				<div class="col-12 text">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam, magnam animi unde culpa porro, praesentium, quas ipsa, dolore quia iure optio aspernatur placeat? Rem error veniam, eligendi repudiandae dignissimos debitis.</p>
+				</div>
+			</div>
+			
+			<div class="element" id="element-5" data-enllax-ratio="-0.25" data-enllax-type="foreground" data-enllax-direction="horizontal">
+				<img src="images/ursa-major.png" alt="" />
+			</div>
+			
+			<div class="element" id="element-6" data-enllax-ratio="0.75" data-enllax-type="foreground" data-enllax-direction="horizontal">
+				<img src="images/space-ship-4.png" alt="" />
+			</div>
+		</section>
+		
+		<!--- fourth section --->
+		<section id="four">
+			<div class="container">
+				<div class="col-12 text">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, incidunt. Illum dolores amet velit eveniet fugit natus excepturi tempora corrupti facilis, illo laboriosam delectus vero. Animi quisquam modi, necessitatibus expedita.</p>
+				</div>
+			</div>
+			
+			<div class="element" id="element-7" data-enllax-ratio="-0.25" data-enllax-type="foreground" data-enllax-direction="horizontal">
+				<img src="images/uranus.png" alt="" />
+			</div>
+			
+			<div class="element" id="element-8" data-enllax-ratio="0.5" data-enllax-type="foreground" data-enllax-direction="horizontal">
+				<img src="images/planet-earth.png" alt="" />
+			</div>
+		</section>
+		
+	</main>
+	
+<!--- footer --->
+<footer>Copyright 2018. For educational purposes only.</footer>
+	
+<!--- jquery library --->
+<script src="js/jquery.min.js"></script>
+
+<!--- one page navigation --->
+<script src="js/jquery.nav.js"></script>
+
+<!--- enlax for parallax --->
+<script src="js/jquery.enllax.min.js"></script>
+
+<script>
+$('nav').onePageNav({
+	currentClass: 'current',
+	changeHash: false,
+	scrollSpeed: 2000
+});
+
+//enlax activation
+$(window).enllax();
+</script>
+	
+</body>
+</html>
